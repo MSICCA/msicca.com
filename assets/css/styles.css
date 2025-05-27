@@ -76,6 +76,8 @@
 
   button {
     -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
     cursor: pointer;
   }
 
@@ -382,7 +384,7 @@
     height: 100%;
   }
 
-  .entry-content > :lmsicca-child {
+  .entry-content > :last-child {
     margin-bottom: 0;
   }
 
@@ -400,7 +402,7 @@
     margin: 0 0 2.8em 0;
   }
 
-  .widget:lmsicca-child {
+  .widget:last-child {
     margin-bottom: 0;
   }
 
@@ -447,7 +449,7 @@
     padding-left: 0;
   }
 
-  .site-header-section > div:lmsicca-child {
+  .site-header-section > div:last-child {
     padding-right: 0;
   }
 
@@ -526,7 +528,7 @@
     margin-bottom: 10px;
   }
 
-  .site-footer-section > :lmsicca-child {
+  .site-footer-section > :last-child {
     margin-bottom: 0;
   }
 
@@ -654,238 +656,6 @@
 
   .msicca-flex-grow-1 {
     flex-grow: 1;
-  }
-}
-
-/*! Hero Slider Styles */
-/* Estilos base del cuerpo (similares a los de tu CSS original para contexto) */
-body {
-  margin: 0;
-  font-family: "Poppins", sans-serif; /* Asumiendo que Poppins está disponible */
-  color: #e7e7e7; /* Color de texto claro para contraste con fondos oscuros */
-  background-color: #161616; /* Fondo oscuro general */
-  line-height: 1.85714285714286;
-}
-
-/* Contenedor principal del Slider Hero */
-.hero-slider-container {
-  position: relative;
-  width: 100%;
-  min-height: 100vh; /* O la altura que prefieras, ej: 80vh, 600px */
-  overflow: hidden; /* Esconde las partes de los slides que están fuera de la vista */
-  background-color: #000; /* Color de fondo mientras cargan las imágenes */
-}
-
-.hero-slides {
-  display: flex; /* Permite que los slides se coloquen uno al lado del otro */
-  width: 300%; /* Ancho total para 3 slides (100% * número de slides) */
-  height: 100%;
-  animation: slideAnimation 15s infinite; /* 15s = 5s por slide * 3 slides */
-}
-
-.hero-slide {
-  width: 100%; /* Cada slide ocupa el 100% del contenedor del slider */
-  height: 100vh; /* O la altura que coincida con .hero-slider-container */
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative; /* Para posicionar el contenido superpuesto */
-  display: flex;
-  align-items: flex-end; /* Alinea el contenido al final (abajo) */
-  justify-content: center; /* Centra el contenido horizontalmente */
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-/* Imágenes de fondo para cada slide */
-/* Reemplaza estas URLs con tus propias imágenes */
-.hero-slide-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url("/assets/images/Somos_INGENIERIA.jpg");
-}
-
-.hero-slide-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url("/assets/images/Somos_ARQUITECTURA.jpg");
-}
-
-.hero-slide-3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url("/assets/images/Somos_DISEÑO_INTERIOR.jpg");
-}
-
-/* Contenido superpuesto en el slide */
-.slide-content-wrapper {
-  display: flex;
-  flex-direction: column; /* Apila los elementos verticalmente */
-  align-items: flex-start; /* Alinea los elementos a la izquierda */
-  width: 100%;
-  max-width: 1200px; /* Ancho máximo del contenido, similar a .msicca-container */
-  padding: 20px; /* Espaciado interno */
-  box-sizing: border-box;
-  color: #fff;
-  z-index: 2;
-  margin-bottom: 5%; /* Ajusta el margen inferior para subir el contenido */
-}
-
-.slide-inner-content {
-  display: flex;
-  width: 100%;
-  gap: 20px; /* Espacio entre las columnas de contenido */
-}
-
-.slide-text-column {
-  flex-basis: 50%; /* Cada columna de texto ocupa el 50% */
-  max-width: 50%;
-}
-
-.slide-text-column.empty {
-  /* Columna vacía para el diseño de dos columnas */
-  flex-basis: 50%;
-  max-width: 50%;
-}
-
-.slide-divider {
-  width: 100px;
-  height: 6px;
-  background-color: #0095c9; /* Color de tu marca --msicca-global-color-0 */
-  margin-bottom: 20px;
-}
-
-.slide-title {
-  font-size: 3.33rem; /* Equivalente a 50px si la base es 15px */
-  font-weight: 800;
-  text-transform: lowercase;
-  line-height: 1.4em;
-  margin-bottom: 20px;
-  color: #ffffff; /* Asegurar contraste */
-}
-
-.slide-button {
-  display: inline-block;
-  padding: 10px 40px;
-  border: 2px solid #0095c9; /* Color de tu marca */
-  color: #0095c9;
-  background-color: rgba(2, 116, 192, 0); /* Transparente */
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-size: 1.4rem; /* 21px */
-  line-height: 1em;
-  text-transform: lowercase;
-  border-radius: 0; /* Sin bordes redondeados como en tu diseño original */
-  transition: all 0.3s ease;
-  margin-top: 20px;
-}
-
-.slide-button:hover {
-  background-color: #0095c9;
-  color: #ffffff; /* Color de texto --msicca-global-color-2 */
-}
-
-/* Línea divisora horizontal inferior */
-.slide-bottom-divider-container {
-  width: 100%;
-  max-width: 1200px; /* Coincide con el slide-content-wrapper */
-  margin: 40px auto 0 auto; /* Espacio arriba y centrado */
-}
-
-.slide-bottom-divider {
-  width: 100%;
-  height: 0.5px;
-  background-color: var(
-    --msicca-global-color-0,
-    #0095c9
-  ); /* Usar variable si está definida o fallback */
-  opacity: 0.5; /* Un poco más sutil */
-}
-
-/* Información de contacto en la parte inferior */
-.slide-contact-info {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1200px; /* Coincide con el slide-content-wrapper */
-  padding: 20px 0; /* Espaciado vertical */
-  margin: 0 auto; /* Centrado */
-  font-size: 1rem; /* Tamaño de fuente base */
-  color: #e7e7e7; /* Color de texto principal */
-}
-
-.slide-contact-info .contact-item {
-  display: flex;
-  align-items: center;
-}
-
-.slide-contact-info .contact-item i {
-  color: #0095c9; /* Color de tu marca para iconos */
-  margin-right: 10px;
-  font-size: 1.2rem; /* Tamaño de icono */
-}
-
-.slide-contact-info .contact-item span {
-  color: #e7e7e7;
-}
-
-/* Animación del Slider */
-@keyframes slideAnimation {
-  0% {
-    margin-left: 0;
-  } /* Slide 1 visible */
-  30% {
-    margin-left: 0;
-  } /* Permanece en Slide 1 */
-  33.33% {
-    margin-left: -100%;
-  } /* Transición a Slide 2 */
-  63.33% {
-    margin-left: -100%;
-  } /* Permanece en Slide 2 */
-  66.66% {
-    margin-left: -200%;
-  } /* Transición a Slide 3 */
-  96.66% {
-    margin-left: -200%;
-  } /* Permanece en Slide 3 */
-  100% {
-    margin-left: 0;
-  } /* Vuelve al Slide 1 (para bucle suave) */
-}
-
-/* Estilos responsivos */
-@media (max-width: 767px) {
-  .slide-title {
-    font-size: 2.5rem; /* Más pequeño en móviles */
-  }
-
-  .slide-button {
-    font-size: 1.2rem;
-    padding: 8px 30px;
-  }
-
-  .slide-inner-content {
-    flex-direction: column; /* Apilar columnas en móvil */
-    gap: 0;
-  }
-
-  .slide-text-column,
-  .slide-text-column.empty {
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-
-  .slide-text-column.empty {
-    display: none; /* Ocultar columna vacía en móvil si no aporta */
-  }
-
-  .slide-contact-info {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 15px; /* Espacio entre items de contacto en móvil */
-  }
-  .slide-contact-info .contact-item {
-    justify-content: center;
   }
 }
 
@@ -1601,7 +1371,7 @@ h6,
   margin-top: 0;
 }
 
-.msicca-builder-html-element p:lmsicca-child {
+.msicca-builder-html-element p:last-child {
   margin-bottom: 0;
 }
 
@@ -1677,7 +1447,7 @@ h6,
   width: 100%;
 }
 
-.msicca-footer-social-wrap .msicca-builder-social-element:lmsicca-child {
+.msicca-footer-social-wrap .msicca-builder-social-element:last-child {
   margin-right: 0;
 }
 
@@ -2018,7 +1788,7 @@ h6,
 }
 
 @media (min-width: 922px) {
-  .msicca-builder-menu .main-navigation > ul > li:lmsicca-child a {
+  .msicca-builder-menu .main-navigation > ul > li:last-child a {
     margin-right: 0;
   }
 }
@@ -2036,7 +1806,7 @@ h6,
   padding-top: 0;
 }
 
-.msicca-mobile-header-content > *:lmsicca-child {
+.msicca-mobile-header-content > *:last-child {
   padding-bottom: 0;
 }
 
@@ -2354,7 +2124,7 @@ a:where(:not(.wp-element-button)) {
     position: relative;
   }
 
-  .elementor-widget:not(:lmsicca-child) {
+  .elementor-widget:not(:last-child) {
     margin-bottom: var(--kit-widget-spacing, 20px);
   }
 
@@ -2364,28 +2134,9 @@ a:where(:not(.wp-element-button)) {
     }
   }
 
-  @media (min-width: -1) {
-    #elementor-device-mode:after {
-      content: "widescreen";
-    }
-  }
-
-  @media (max-width: -1) {
-    #elementor-device-mode:after {
-      content: "laptop";
-      content: "tablet_extra";
-    }
-  }
-
   @media (max-width: 1024px) {
     #elementor-device-mode:after {
       content: "tablet";
-    }
-  }
-
-  @media (max-width: -1) {
-    #elementor-device-mode:after {
-      content: "mobile_extra";
     }
   }
 
@@ -2468,6 +2219,10 @@ a:where(:not(.wp-element-button)) {
     --border-block-end-width: var(--border-bottom-width);
     --border-inline-start-width: var(--border-left-width);
     --border-inline-end-width: var(--border-right-width);
+    -webkit-transition: background var(--background-transition, 0.3s);
+    -moz-transition: background var(--background-transition, 0.3s);
+    -ms-transition: background var(--background-transition, 0.3s);
+    -o-transition: background var(--background-transition, 0.3s);
   }
 
   .e-con.e-flex {
@@ -2569,6 +2324,10 @@ a:where(:not(.wp-element-button)) {
     transition: background var(--overlay-transition, 0.3s),
       border-radius var(--border-transition, 0.3s),
       opacity var(--overlay-transition, 0.3s);
+    -webkit-transition: background var(--overlay-transition, 0.3s);
+    -moz-transition: background var(--overlay-transition, 0.3s);
+    -ms-transition: background var(--overlay-transition, 0.3s);
+    -o-transition: background var(--overlay-transition, 0.3s);
   }
 
   .e-con .elementor-widget {
@@ -2583,7 +2342,7 @@ a:where(:not(.wp-element-button)) {
     max-width: 100%;
   }
 
-  .e-con .elementor-widget:not(:lmsicca-child) {
+  .e-con .elementor-widget:not(:last-child) {
     --kit-widget-spacing: 0px;
   }
 
@@ -2651,7 +2410,6 @@ a:where(:not(.wp-element-button)) {
   }
 }
 
-/*! CSS Used from: https://websitedemos.net/wordpress-agency-04/wp-content/uploads/sites/98/elementor/css/post-1139.css?ver=1721794665 ; media=all */
 @media all {
   .elementor-kit-1139 {
     --e-global-color-primary: #6ec1e4;
@@ -2676,7 +2434,7 @@ a:where(:not(.wp-element-button)) {
     --container-max-width: 1200px;
   }
 
-  .elementor-widget:not(:lmsicca-child) {
+  .elementor-widget:not(:last-child) {
     margin-block-end: 20px;
   }
 
@@ -3182,7 +2940,6 @@ a:where(:not(.wp-element-button)) {
     .elementor-divider-separator {
     width: 5px;
     margin: 0 auto;
-    margin-center: 0;
   }
 
   .elementor-6 .elementor-element.elementor-element-ac480bc .elementor-divider {
@@ -3546,7 +3303,6 @@ a:where(:not(.wp-element-button)) {
     .elementor-divider-separator {
     width: 5px;
     margin: 0 auto;
-    margin-center: 0;
   }
 
   .elementor-6 .elementor-element.elementor-element-3c7d2e8 .elementor-divider {
@@ -3635,7 +3391,6 @@ a:where(:not(.wp-element-button)) {
     .elementor-divider-separator {
     width: 5px;
     margin: 0 auto;
-    margin-center: 0;
   }
 
   .elementor-6 .elementor-element.elementor-element-461f426 .elementor-divider {
@@ -3881,7 +3636,6 @@ a:where(:not(.wp-element-button)) {
     .elementor-divider-separator {
     width: 5px;
     margin: 0 auto;
-    margin-center: 0;
   }
 
   .elementor-6 .elementor-element.elementor-element-c7fa07a .elementor-divider {
@@ -4268,7 +4022,6 @@ a:where(:not(.wp-element-button)) {
     .elementor-divider-separator {
     width: 5px;
     margin: 0 auto;
-    margin-center: 0;
   }
 
   .elementor-6 .elementor-element.elementor-element-f8f246b .elementor-divider {
@@ -4561,7 +4314,6 @@ a:where(:not(.wp-element-button)) {
       .elementor-divider-separator {
       width: 20%;
       margin: 0 auto;
-      margin-center: 0;
     }
 
     .elementor-6
@@ -5192,40 +4944,6 @@ h6,
     right: 0;
   }
 
-  @media (min-width: -1) {
-    .elementor-widget:not(.elementor-widescreen-align-right)
-      .elementor-icon-list-item:after {
-      left: 0;
-    }
-
-    .elementor-widget:not(.elementor-widescreen-align-left)
-      .elementor-icon-list-item:after {
-      right: 0;
-    }
-  }
-
-  @media (max-width: -1) {
-    .elementor-widget:not(.elementor-laptop-align-right)
-      .elementor-icon-list-item:after {
-      left: 0;
-    }
-
-    .elementor-widget:not(.elementor-laptop-align-left)
-      .elementor-icon-list-item:after {
-      right: 0;
-    }
-
-    .elementor-widget:not(.elementor-tablet_extra-align-right)
-      .elementor-icon-list-item:after {
-      left: 0;
-    }
-
-    .elementor-widget:not(.elementor-tablet_extra-align-left)
-      .elementor-icon-list-item:after {
-      right: 0;
-    }
-  }
-
   @media (max-width: 1024px) {
     .elementor-widget:not(.elementor-tablet-align-right)
       .elementor-icon-list-item:after {
@@ -5233,18 +4951,6 @@ h6,
     }
 
     .elementor-widget:not(.elementor-tablet-align-left)
-      .elementor-icon-list-item:after {
-      right: 0;
-    }
-  }
-
-  @media (max-width: -1) {
-    .elementor-widget:not(.elementor-mobile_extra-align-right)
-      .elementor-icon-list-item:after {
-      left: 0;
-    }
-
-    .elementor-widget:not(.elementor-mobile_extra-align-left)
       .elementor-icon-list-item:after {
       right: 0;
     }
