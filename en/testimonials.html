@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MSICCA | Critical Infrastructure Stabilization & EPC Support in Zulia, Venezuela. US Federal Standards (NEC/NFPA/OSHA) compliance. Engineering services for international stakeholders and prime contractors.">
+  <title>MSICCA | Engineering & Construction Solutions | DUNS/UEI Registered</title>
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+  
+  <link rel="alternate" hreflang="es-VE" href="https://msicca.com/">
+  <link rel="alternate" hreflang="en" href="https://msicca.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://msicca.com/">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  
+  <script src="https://kit.fontawesome.com/d235c54e89.js" crossorigin="anonymous"></script>
+  
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P8HPBXR5');
+  </script>
+  
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://msicca.com/en/">
+  <meta property="og:title" content="MSICCA | Critical Infrastructure & EPC Solutions">
+  <meta property="og:description" content="US Federal Standards compliance (NEC/NFPA/OSHA). Engineering support for international stakeholders in Venezuela.">
+  <meta property="og:image" content="https://msicca.com/assets/images/Open_Graph_Responsively_20240201.jpg">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://msicca.com/en/">
+  <meta name="twitter:title" content="MSICCA | Critical Infrastructure & EPC Solutions">
+  <meta name="twitter:description" content="US Federal Standards compliance (NEC/NFPA/OSHA). Engineering support for international stakeholders in Venezuela.">
+  <meta name="twitter:image" content="https://msicca.com/assets/images/Open_Graph_Responsively_20240201.jpg">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --color-amber: #F59E0B;
+      --color-amber-light: #FCD34D;
+      --color-amber-dark: #D97706;
+      --color-bg-dark: #09090b;
+      --color-bg-darker: #000000;
+      --color-zinc-900: #18181b;
+      --color-zinc-800: #27272a;
+      --color-zinc-700: #3f3f46;
+      --color-zinc-600: #52525b;
+      --color-zinc-400: #a1a1aa;
+      --color-zinc-300: #d4d4d8;
+      --color-white: #ffffff;
+      --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+
+    body {
+      font-family: var(--font-inter);
+      background-color: var(--color-bg-dark);
+      color: var(--color-zinc-300);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(9, 9, 11, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(245, 158, 11, 0.1);
+    }
+
+    .header-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 50px;
+      width: auto;
+    }
+
+    .nav-desktop {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .nav-menu a {
+      color: var(--color-zinc-300);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+      text-transform: lowercase;
+    }
+
+    .nav-menu a:hover {
+      color: var(--color-amber);
+    }
+
+    .lang-selector {
+      display: flex;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .lang-selector a {
+      color: var(--color-zinc-400);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .lang-selector a.active {
+      color: var(--color-amber);
+    }
+
+    .btn-capability {
+      padding: 0.6rem 1.2rem;
+      background: linear-gradient(135deg, var(--color-amber) 0%, var(--color-amber-dark) 100%);
+      color: var(--color-bg-dark);
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-capability:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(245, 158, 11, 0.3);
+    }
+
+    .mobile-toggle {
+      display: none;
+      background: transparent;
+      border: none;
+      color: var(--color-white);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(9, 9, 11, 0.75) 0%, rgba(0, 0, 0, 0.7) 100%),
+                  url('/assets/images/Somos_CONSTRUCCION.jpg') center/cover;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.05) 0%, transparent 70%);
+    }
+
+    .hero-content {
+      position: relative;
+      max-width: 1400px;
+      padding: 8rem 2rem 4rem;
+      text-align: left;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.2);
+      border-radius: 50px;
+      color: var(--color-amber);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .company-id {
+      font-size: 0.85rem;
+      color: var(--color-zinc-400);
+      font-weight: 500;
+      margin-bottom: 2rem;
+      font-family: monospace;
+      letter-spacing: 0.5px;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      color: var(--color-white);
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      max-width: 900px;
+      text-transform: uppercase;
+      letter-spacing: -0.5px;
+    }
+
+    .hero h1 .highlight {
+      background: linear-gradient(135deg, var(--color-amber) 0%, var(--color-amber-light) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: var(--color-zinc-400);
+      margin-bottom: 3rem;
+      max-width: 700px;
+      line-height: 1.8;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      padding: 1rem 2rem;
+      background: linear-gradient(135deg, var(--color-amber) 0%, var(--color-amber-dark) 100%);
+      color: var(--color-bg-dark);
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px rgba(245, 158, 11, 0.3);
+    }
+
+    .btn-secondary {
+      padding: 1rem 2rem;
+      background: rgba(245, 158, 11, 0.1);
+      color: var(--color-amber);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(245, 158, 11, 0.2);
+      border-color: var(--color-amber);
+    }
+
+    .contact-bar {
+      background: rgba(39, 39, 42, 0.5);
+      backdrop-filter: blur(8px);
+      border-top: 1px solid rgba(245, 158, 11, 0.1);
+      padding: 1.5rem 0;
+      margin-top: 4rem;
+    }
+
+    .contact-bar-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--color-zinc-400);
+      font-size: 0.95rem;
+    }
+
+    .contact-item i {
+      color: var(--color-amber);
+      font-size: 1.1rem;
+    }
+
+    .section {
+      padding: 6rem 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      margin-bottom: 4rem;
+    }
+
+    .section-badge {
+      display: inline-block;
+      padding: 0.4rem 0.8rem;
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.2);
+      border-radius: 4px;
+      color: var(--color-amber);
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .section h2 {
+      font-size: 2.75rem;
+      font-weight: 700;
+      color: var(--color-white);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .section-description {
+      font-size: 1.15rem;
+      color: var(--color-zinc-400);
+      max-width: 800px;
+      line-height: 1.8;
+    }
+
+    .quote-box {
+      border-left: 4px solid var(--color-amber);
+      padding-left: 2rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: var(--color-zinc-300);
+      font-size: 1.1rem;
+    }
+
+    .glass-panel {
+      background: rgba(39, 39, 42, 0.4);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(245, 158, 11, 0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      transition: all 0.3s ease;
+    }
+
+    .glass-panel:hover {
+      border-color: rgba(245, 158, 11, 0.3);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .service-card h3 {
+      font-size: 1.35rem;
+      color: var(--color-white);
+      margin-bottom: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .service-card p, .service-card ul {
+      color: var(--color-zinc-400);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .service-card ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .service-card ul li {
+      padding-left: 1.5rem;
+      position: relative;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-card ul li:before {
+      content: "▸";
+      color: var(--color-amber);
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+
+    .service-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--color-amber) 0%, var(--color-amber-dark) 100%);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-icon i {
+      font-size: 1.75rem;
+      color: var(--color-bg-dark);
+    }
+
+    .differentiators-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .diff-card {
+      background: rgba(39, 39, 42, 0.3);
+      border: 1px solid rgba(245, 158, 11, 0.15);
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+
+    .diff-card h4 {
+      color: var(--color-amber);
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+    }
+
+    .diff-card p {
+      color: var(--color-zinc-400);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .naics-codes {
+      background: rgba(39, 39, 42, 0.2);
+      border: 1px solid rgba(245, 158, 11, 0.2);
+      border-radius: 8px;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+
+    .naics-codes h3 {
+      color: var(--color-white);
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .naics-codes ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .naics-codes ul li {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid rgba(245, 158, 11, 0.1);
+      color: var(--color-zinc-300);
+      font-family: monospace;
+      font-size: 0.95rem;
+    }
+
+    .naics-codes ul li:last-child {
+      border-bottom: none;
+    }
+
+    .naics-codes ul li strong {
+      color: var(--color-amber);
+      font-weight: 600;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .project-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      background: rgba(39, 39, 42, 0.4);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(245, 158, 11, 0.1);
+    }
+
+    .project-image {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .project-card:hover .project-image {
+      transform: scale(1.05);
+    }
+
+    .project-content {
+      padding: 2rem;
+    }
+
+    .project-tag {
+      display: inline-block;
+      padding: 0.3rem 0.8rem;
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.2);
+      border-radius: 4px;
+      color: var(--color-amber);
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    .project-card h3 {
+      font-size: 1.5rem;
+      color: var(--color-white);
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+    }
+
+    .project-card p {
+      color: var(--color-zinc-400);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 0.5rem;
+    }
+
+    .cta-section {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.05) 0%, rgba(217, 119, 6, 0.05) 100%);
+      border: 1px solid rgba(245, 158, 11, 0.2);
+      border-radius: 16px;
+      padding: 4rem 2rem;
+      text-align: center;
+      margin: 4rem 0;
+    }
+
+    .cta-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta-section p {
+      font-size: 1.15rem;
+      color: var(--color-zinc-400);
+      margin-bottom: 2rem;
+    }
+
+    .footer {
+      background: var(--color-bg-darker);
+      border-top: 1px solid rgba(245, 158, 11, 0.1);
+      padding: 4rem 2rem 2rem;
+    }
+
+    .footer-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-section h3 {
+      color: var(--color-white);
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+
+    .footer-logo img {
+      height: 40px;
+      margin-bottom: 1rem;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-links a {
+      color: var(--color-zinc-400);
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-size: 0.95rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--color-amber);
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-amber);
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      background: var(--color-amber);
+      color: var(--color-bg-dark);
+      transform: translateY(-3px);
+    }
+
+    .footer-bottom {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(245, 158, 11, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-bottom p {
+      color: var(--color-zinc-400);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .nav-desktop { display: none; }
+      .mobile-toggle { display: block; }
+      .hero h1 { font-size: 2.25rem; }
+      .hero p { font-size: 1.05rem; }
+      .section h2 { font-size: 2rem; }
+      .services-grid, .projects-grid, .differentiators-grid { grid-template-columns: 1fr; }
+      .contact-bar-content { flex-direction: column; align-items: flex-start; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8HPBXR5" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <a href="/en/">
+          <img src="/assets/images/png/MSICCA_LOGOTIPO_BLANCO_1120X430PX.png" alt="MSICCA Logo">
+        </a>
+      </div>
+      <nav class="nav-desktop">
+        <ul class="nav-menu">
+          <li><a href="#home">home.</a></li>
+          <li><a href="#competencies">core competencies.</a></li>
+          <li><a href="#differentiators">differentiators.</a></li>
+          <li><a href="#performance">past performance.</a></li>
+          <li><a href="#contact">contact.</a></li>
+        </ul>
+        <div class="lang-selector">
+          <a href="/">ES</a>
+          <span>|</span>
+          <a href="/en/" class="active">EN</a>
+        </div>
+        <a href="/docs/MSICCA_Capability_Statement.pdf" class="btn-capability" target="_blank">
+          <i class="fas fa-file-pdf"></i> Capability (PDF)
+        </a>
+      </nav>
+      <button class="mobile-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge">ENGINEERING • PROCUREMENT • CONSTRUCTION</div>
+      <div class="company-id">DUNS: [Pending] | UEI: [Pending] | CAGE: [Pending]</div>
+      <h1>
+        <span class="highlight">CRITICAL INFRASTRUCTURE</span><br>
+        STABILIZATION & SUPPORT
+      </h1>
+      <p>
+        MSICCA provides rapid-response engineering, procurement, and construction (EPC) support specialized in the Zulia region. 
+        We bridge the gap between US Federal Standards (NEC/NFPA/OSHA) and local operational realities, ensuring mission continuity 
+        for international agencies and prime contractors.
+      </p>
+      <div class="hero-cta">
+        <a href="/docs/MSICCA_Capability_Statement.pdf" class="btn-primary" target="_blank">Download Capability Statement</a>
+        <a href="#contact" class="btn-secondary">Request Capability Briefing</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="competencies">
+    <div class="section-header">
+      <span class="section-badge">Core Competencies</span>
+      <h2>Mission Continuity in Complex Environments</h2>
+      <p class="section-description">
+        MSICCA provides the local boots-on-the-ground capability required for international stakeholders. 
+        We bridge the gap between US engineering standards and local execution challenges.
+      </p>
+      <div class="quote-box">
+        "Guaranteeing operational continuity of your assets through international code audits and resilient design."
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="glass-panel service-card">
+        <div class="service-icon">
+          <i class="fas fa-bolt"></i>
+        </div>
+        <h3>Electrical Power Systems</h3>
+        <p><strong>Low & Medium Voltage Expertise</strong></p>
+        <ul>
+          <li>Site assessment and retrofitting for NEC 2023 compliance</li>
+          <li>Generator installation, synchronization, and fuel logistics integration</li>
+          <li>Grounding & Bonding systems for sensitive communication equipment (IEEE Std 142)</li>
+          <li>Uninterruptible Power Supply (UPS) deployment for command centers</li>
+        </ul>
+      </div>
+      <div class="glass-panel service-card">
+        <div class="service-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h3>Facility Hardening</h3>
+        <p><strong>Infrastructure Rehabilitation & Security</strong></p>
+        <ul>
+          <li>Rapid repair of HVAC, plumbing, and electrical systems in dilapidated infrastructure</li>
+          <li>Perimeter security lighting and access control infrastructure support</li>
+          <li>Water filtration and purification system installation</li>
+          <li>Structural reinforcement and weatherproofing</li>
+        </ul>
+      </div>
+      <div class="glass-panel service-card">
+        <div class="service-icon">
+          <i class="fas fa-shipping-fast"></i>
+        </div>
+        <h3>Local Logistics & Supply Chain</h3>
+        <p><strong>Procurement in Constrained Environments</strong></p>
+        <ul>
+          <li>Sourcing of construction materials within the Zulia region avoiding sanctioned entities</li>
+          <li>Import/Customs clearing support for specialized technical equipment</li>
+          <li>Qualified labor force staffing (vetted engineers and technicians)</li>
+          <li>FCPA-compliant supply chain management</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="differentiators">
+    <div class="section-header">
+      <span class="section-badge">Why MSICCA?</span>
+      <h2>Differentiators for Prime Contractors</h2>
+    </div>
+    <div class="differentiators-grid">
+      <div class="glass-panel diff-card">
+        <h4>Regulatory Bridge</h4>
+        <p>We translate US execution requirements into local action. Our team is trained in NEC (National Electrical Code) and OSHA 1926 (Construction Safety), mitigating liability risks for Prime Contractors.</p>
+      </div>
+      <div class="glass-panel diff-card">
+        <h4>FCPA Compliant Structure</h4>
+        <p>MSICCA operates with strict financial transparency, ensuring a clean supply chain free from political exposure or sanctioned parties.</p>
+      </div>
+      <div class="glass-panel diff-card">
+        <h4>Zulia Region Specialists</h4>
+        <p>Unlike Caracas-based firms, we possess deep knowledge of the Maracaibo logistics, terrain, and grid idiosyncrasies, enabling faster deployment times.</p>
+      </div>
+      <div class="glass-panel diff-card">
+        <h4>Agile Engineering</h4>
+        <p>Ability to produce "As-Built" drawings and modification plans on-site using BIM/Revit for immediate approval.</p>
+      </div>
+    </div>
+
+    <div class="naics-codes">
+      <h3>NAICS Codes</h3>
+      <p style="color: var(--color-zinc-400); margin-bottom: 1.5rem; font-size: 0.95rem;">
+        North American Industry Classification System
+      </p>
+      <ul>
+        <li><strong>541330:</strong> Engineering Services (Primary)</li>
+        <li><strong>238210:</strong> Electrical Contractors and Other Wiring Installation</li>
+        <li><strong>236220:</strong> Commercial and Institutional Building Construction</li>
+        <li><strong>541614:</strong> Process, Physical Distribution, and Logistics Consulting Services</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="performance">
+    <div class="section-header">
+      <span class="section-badge">Past Performance</span>
+      <h2>Proven Capability in Critical Infrastructure</h2>
+      <p class="section-description">
+        Technical complexity demonstrations with US standards compliance and rapid deployment capabilities.
+      </p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="/assets/images/Somos_INGENIERIA.jpg" alt="Grid Stability Project" class="project-image">
+        <div class="project-content">
+          <span class="project-tag">Industrial</span>
+          <h3>Grid Stability Project</h3>
+          <p><strong>Scope:</strong> Rehabilitation of industrial substation for private sector client, ensuring 99.9% uptime.</p>
+          <p><strong>Complexity:</strong> NEC 2020 compliance retrofit, medium-voltage switchgear installation, redundant power systems design.</p>
+          <p><strong>Outcome:</strong> Zero downtime transition, full operational continuity maintained throughout 4-week upgrade cycle.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="/assets/images/Somos_CONSTRUCCION.jpg" alt="Commercial Infrastructure" class="project-image">
+        <div class="project-content">
+          <span class="project-tag">Commercial</span>
+          <h3>Commercial Infrastructure Hardening</h3>
+          <p><strong>Scope:</strong> Retrofitting of 2,000 sq. ft. facility, including independent power generation and water autonomy.</p>
+          <p><strong>Complexity:</strong> Generator synchronization, fuel storage compliance (NFPA 30), backup water filtration systems.</p>
+          <p><strong>Outcome:</strong> Facility achieved 72-hour autonomous operation capability, meeting international security standards.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="/assets/images/Somos_SUMINISTRO.jpg" alt="Industrial Procurement" class="project-image">
+        <div class="project-content">
+          <span class="project-tag">Logistics</span>
+          <h3>Industrial Procurement Logistics</h3>
+          <p><strong>Scope:</strong> Sourcing and installation of specialized electrical components under severe import constraints.</p>
+          <p><strong>Complexity:</strong> Cross-border logistics coordination, customs clearance for technical equipment, vetted supplier network activation.</p>
+          <p><strong>Outcome:</strong> On-time delivery despite supply chain challenges, full FCPA compliance documentation maintained.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="cta-section">
+      <h2>Ready for Mission-Critical Support?</h2>
+      <p>Let's discuss how MSICCA can provide the local engineering capability your project requires.</p>
+      <div class="hero-cta" style="justify-content: center;">
+        <a href="/docs/MSICCA_Capability_Statement.pdf" class="btn-primary" target="_blank">Download Capability Statement</a>
+        <a href="mailto:contact@msicca.com" class="btn-secondary">Request Capability Briefing</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <img src="/assets/images/png/MSICCA_LOGOTIPO_BLANCO_1120X430PX.png" alt="MSICCA Logo">
+        </div>
+        <p style="color: var(--color-zinc-400); margin-bottom: 1rem; max-width: 300px;">
+          Engineering and construction solutions for critical infrastructure in Venezuela. US Federal Standards compliance.
+        </p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/msiccave" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://x.com/msiccave" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://instagram.com/msiccave" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/msiccave/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Navigation</h3>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#competencies">Core Competencies</a></li>
+          <li><a href="#differentiators">Differentiators</a></li>
+          <li><a href="#performance">Past Performance</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Services</h3>
+        <ul class="footer-links">
+          <li><a href="#competencies">Electrical Power Systems</a></li>
+          <li><a href="#competencies">Facility Hardening</a></li>
+          <li><a href="#competencies">Supply Chain & Procurement</a></li>
+          <li><a href="#competencies">Engineering Services</a></li>
+          <li><a href="#competencies">Construction Management</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <ul class="footer-links">
+          <li>Urb. Sucre, Calle 63</li>
+          <li>Maracaibo, Zulia 4005</li>
+          <li>Venezuela</li>
+          <li><a href="mailto:contact@msicca.com">contact@msicca.com</a></li>
+          <li><a href="tel:+584121273004">+58 (412) 127-3004</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © 2025 MSICCA | MRVL Engineering and Construction Solutions, c.a.</p>
+      <p>Made with <i class="fas fa-heart" style="color: var(--color-amber);"></i> by nrkmrvl.coder</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.mobile-toggle')?.addEventListener('click', function() {
+      alert('Mobile menu: implementation pending for production');
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
