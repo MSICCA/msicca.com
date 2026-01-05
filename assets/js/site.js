@@ -155,8 +155,14 @@
     const mobileToggle = document.querySelector('.mobile-toggle');
     if (mobileToggle) {
       mobileToggle.addEventListener('click', function() {
-        // TODO: Implement full mobile menu
-        alert('Menú móvil: implementación pendiente para producción');
+        // TODO: Implement full mobile menu with slide-out navigation
+        // For now, log to console instead of alert
+        console.log('Mobile menu clicked - implementation pending');
+        // Temporary: Show desktop nav items in a simple way
+        const navDesktop = document.querySelector('.nav-desktop');
+        if (navDesktop) {
+          navDesktop.style.display = navDesktop.style.display === 'flex' ? 'none' : 'flex';
+        }
       });
     }
   }
