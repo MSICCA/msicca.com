@@ -95,30 +95,26 @@
   function initScrollAnimations() {
     const observerOptions = {
       threshold: 0.1,
-      rootMargin: '0px 0px -100px 0px'
+      rootMargin: '0px 0px -50px 0px'
     };
 
     const observer = new IntersectionObserver(function(entries) {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.style.animationDelay = '0s';
-          entry.target.style.animationPlayState = 'running';
+          entry.target.classList.add('animate-in');
           observer.unobserve(entry.target);
         }
       });
     }, observerOptions);
 
-    // Observe all sections
-    document.querySelectorAll('.section').forEach(section => {
-      section.style.animationPlayState = 'paused';
-      observer.observe(section);
-    });
-
-    // Observe cards and panels with stagger effect
-    document.querySelectorAll('.glass-panel, .project-card, .diff-card').forEach((element, index) => {
-      element.style.opacity = '0';
-      element.style.animation = `fadeInUp 0.6s ease-out ${index * 0.1}s forwards`;
-      observer.observe(element);
+    // Observe sections only (not individual cards to avoid janky animations)
+    document.querySelectorAll('.section').forEach((section, index) => {
+      // First section should be visible immediately
+      if (index === 0) {
+        section.classList.add('initial-visible');
+      } else if (!section.classList.contains('animate-in')) {
+        observer.observe(section);
+      }
     });
   }
 
