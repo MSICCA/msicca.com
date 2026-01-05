@@ -432,7 +432,29 @@ body {
   font-size: 1.1rem;
 }
 
-/* Section Styles */
+/* Band System - Full-width background wrappers */
+.band {
+  width: 100%;
+  position: relative;
+}
+
+.band--base {
+  background: var(--color-bg-dark);
+}
+
+.band--soft {
+  background: linear-gradient(180deg, var(--color-zinc-900) 0%, var(--color-zinc-800) 100%);
+  border-top: 1px solid rgba(245, 158, 11, 0.05);
+  border-bottom: 1px solid rgba(245, 158, 11, 0.05);
+}
+
+.band--alt {
+  background: var(--color-zinc-900);
+  border-top: 1px solid rgba(245, 158, 11, 0.05);
+  border-bottom: 1px solid rgba(245, 158, 11, 0.05);
+}
+
+/* Section Styles - Content container only */
 .section {
   padding: 6rem 2rem;
   max-width: 1400px;
@@ -450,37 +472,6 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-/* Section Banding - Alternating Backgrounds (Industry Trend) */
-.section-alt {
-  background-color: var(--color-zinc-900);
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  padding-left: calc(50vw - 50%);
-  padding-right: calc(50vw - 50%);
-}
-
-/* Dark section with full-width background */
-.section--dark {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(9, 9, 11, 0.5) 100%);
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  padding-left: calc(50vw - 50%);
-  padding-right: calc(50vw - 50%);
-  border-top: 1px solid rgba(245, 158, 11, 0.05);
-  border-bottom: 1px solid rgba(245, 158, 11, 0.05);
-}
-
-/* Light section with subtle background */
-.section--light {
-  background: linear-gradient(180deg, rgba(39, 39, 42, 0.3) 0%, rgba(39, 39, 42, 0.2) 100%);
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  padding-left: calc(50vw - 50%);
-  padding-right: calc(50vw - 50%);
-  border-top: 1px solid rgba(245, 158, 11, 0.08);
-  border-bottom: 1px solid rgba(245, 158, 11, 0.08);
 }
 
 .section-header {
