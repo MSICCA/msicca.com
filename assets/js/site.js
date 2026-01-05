@@ -26,21 +26,34 @@
     window.addEventListener('scroll', updateHeader, { passive: true });
   }
 
-  // Hero slideshow functionality
+  // Hero slideshow functionality with content changes
   function initHeroSlideshow() {
     const heroSlides = document.querySelectorAll('.hero-slide');
+    const slideContents = document.querySelectorAll('.slide-content');
+    
     if (heroSlides.length <= 1) return; // No slideshow needed
 
     let currentSlide = 0;
     const slideInterval = 5000; // 5 seconds per slide
 
     function showSlide(index) {
+      // Hide all slides and content
       heroSlides.forEach((slide, i) => {
         slide.classList.remove('active');
-        if (i === index) {
-          slide.classList.add('active');
-        }
       });
+      
+      slideContents.forEach((content, i) => {
+        content.classList.remove('active');
+      });
+
+      // Show current slide and content
+      if (heroSlides[index]) {
+        heroSlides[index].classList.add('active');
+      }
+      
+      if (slideContents[index]) {
+        slideContents[index].classList.add('active');
+      }
     }
 
     function nextSlide() {
