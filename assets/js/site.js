@@ -1,6 +1,20 @@
 /**
  * MSICCA Site JavaScript
  * Shared functionality for header, hero slideshow, smooth scrolling, and animations
+ * 
+ * COMPONENT RESPONSIBILITIES:
+ * - initHeaderScroll(): Handles header transparency on scroll
+ * - initHeroSlideshow(): Auto-advances hero slideshow on home pages (5s interval)
+ * - initSmoothScroll(): Smooth scroll for anchor links with header offset
+ * - initScrollAnimations(): Fade-in animations for sections using IntersectionObserver
+ * - initPageTransitions(): Fade effect on navigation (optional)
+ * - initMobileMenu(): Mobile menu toggle (placeholder)
+ * 
+ * ANIMATION CONVENTIONS:
+ * - First section is immediately visible (.initial-visible class)
+ * - Subsequent sections fade in when scrolled into view (.animate-in class)
+ * - No inline styles are injected to avoid layout shifts
+ * - All animations use CSS transitions defined in site.css
  */
 
 (function() {
@@ -95,30 +109,26 @@
   function initScrollAnimations() {
     const observerOptions = {
       threshold: 0.1,
-      rootMargin: '0px 0px -100px 0px'
+      rootMargin: '0px 0px -50px 0px'
     };
 
     const observer = new IntersectionObserver(function(entries) {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.style.animationDelay = '0s';
-          entry.target.style.animationPlayState = 'running';
+          entry.target.classList.add('animate-in');
           observer.unobserve(entry.target);
         }
       });
     }, observerOptions);
 
-    // Observe all sections
-    document.querySelectorAll('.section').forEach(section => {
-      section.style.animationPlayState = 'paused';
-      observer.observe(section);
-    });
-
-    // Observe cards and panels with stagger effect
-    document.querySelectorAll('.glass-panel, .project-card, .diff-card').forEach((element, index) => {
-      element.style.opacity = '0';
-      element.style.animation = `fadeInUp 0.6s ease-out ${index * 0.1}s forwards`;
-      observer.observe(element);
+    // Observe sections only (not individual cards to avoid janky animations)
+    document.querySelectorAll('.section').forEach((section, index) => {
+      // First section should be visible immediately
+      if (index === 0) {
+        section.classList.add('initial-visible');
+      } else if (!section.classList.contains('animate-in')) {
+        observer.observe(section);
+      }
     });
   }
 
@@ -145,8 +155,14 @@
     const mobileToggle = document.querySelector('.mobile-toggle');
     if (mobileToggle) {
       mobileToggle.addEventListener('click', function() {
-        // TODO: Implement full mobile menu
-        alert('Menú móvil: implementación pendiente para producción');
+        // TODO: Implement full mobile menu with slide-out navigation
+        // For now, log to console instead of alert
+        console.log('Mobile menu clicked - implementation pending');
+        // Temporary: Show desktop nav items in a simple way
+        const navDesktop = document.querySelector('.nav-desktop');
+        if (navDesktop) {
+          navDesktop.style.display = navDesktop.style.display === 'flex' ? 'none' : 'flex';
+        }
       });
     }
   }
