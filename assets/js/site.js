@@ -1,6 +1,20 @@
 /**
  * MSICCA Site JavaScript
  * Shared functionality for header, hero slideshow, smooth scrolling, and animations
+ * 
+ * COMPONENT RESPONSIBILITIES:
+ * - initHeaderScroll(): Handles header transparency on scroll
+ * - initHeroSlideshow(): Auto-advances hero slideshow on home pages (5s interval)
+ * - initSmoothScroll(): Smooth scroll for anchor links with header offset
+ * - initScrollAnimations(): Fade-in animations for sections using IntersectionObserver
+ * - initPageTransitions(): Fade effect on navigation (optional)
+ * - initMobileMenu(): Mobile menu toggle (placeholder)
+ * 
+ * ANIMATION CONVENTIONS:
+ * - First section is immediately visible (.initial-visible class)
+ * - Subsequent sections fade in when scrolled into view (.animate-in class)
+ * - No inline styles are injected to avoid layout shifts
+ * - All animations use CSS transitions defined in site.css
  */
 
 (function() {
