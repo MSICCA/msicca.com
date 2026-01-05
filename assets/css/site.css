@@ -23,12 +23,26 @@
   --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-inter);
   background-color: var(--color-bg-dark);
   color: var(--color-zinc-300);
   line-height: 1.6;
   overflow-x: hidden;
+  animation: pageLoad 0.4s ease-in-out;
+}
+
+@keyframes pageLoad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Header Styles - Initially Transparent */
@@ -200,24 +214,25 @@ body {
   margin: 0 auto;
   padding: 8rem 2rem 4rem;
   z-index: 10;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .slide-content {
   opacity: 0;
   position: absolute;
-  top: 8rem;
+  top: 50%;
   left: 2rem;
   right: 2rem;
+  transform: translateY(-50%);
   transition: opacity 0.8s ease-in-out;
   pointer-events: none;
 }
 
 .slide-content.active {
   opacity: 1;
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
   pointer-events: auto;
 }
 
@@ -271,6 +286,50 @@ body {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+/* Simple Page Header (non-hero) */
+.page-header {
+  padding: 10rem 2rem 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-header .hero-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  border-radius: 50px;
+  color: var(--color-amber);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+}
+
+.page-header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--color-white);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.page-header h1 .highlight {
+  background: linear-gradient(135deg, var(--color-amber) 0%, var(--color-amber-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.page-header p {
+  font-size: 1.15rem;
+  color: var(--color-zinc-400);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
 }
 
 .btn-primary {
@@ -349,6 +408,28 @@ body {
   padding: 6rem 2rem;
   max-width: 1400px;
   margin: 0 auto;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Section Banding - Alternating Backgrounds */
+.section-alt {
+  background-color: var(--color-zinc-900);
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
 }
 
 .section-header {

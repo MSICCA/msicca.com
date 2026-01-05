@@ -1,6 +1,6 @@
 /**
  * MSICCA Site JavaScript
- * Shared functionality for header, hero slideshow, and smooth scrolling
+ * Shared functionality for header, hero slideshow, smooth scrolling, and animations
  */
 
 (function() {
@@ -68,7 +68,7 @@
     setInterval(nextSlide, slideInterval);
   }
 
-  // Smooth scroll for anchor links
+  // Smooth scroll for anchor links with offset for header
   function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
@@ -78,10 +78,63 @@
         const target = document.querySelector(href);
         if (target) {
           e.preventDefault();
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
+          const headerOffset = 80;
+          const elementPosition = target.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
           });
+        }
+      });
+    });
+  }
+
+  // Intersection Observer for fade-in animations on scroll
+  function initScrollAnimations() {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationDelay = '0s';
+          entry.target.style.animationPlayState = 'running';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections
+    document.querySelectorAll('.section').forEach(section => {
+      section.style.animationPlayState = 'paused';
+      observer.observe(section);
+    });
+
+    // Observe cards and panels with stagger effect
+    document.querySelectorAll('.glass-panel, .project-card, .diff-card').forEach((element, index) => {
+      element.style.opacity = '0';
+      element.style.animation = `fadeInUp 0.6s ease-out ${index * 0.1}s forwards`;
+      observer.observe(element);
+    });
+  }
+
+  // Page transition effect
+  function initPageTransitions() {
+    // Fade out on link click
+    document.querySelectorAll('a:not([href^="#"]):not([target="_blank"])').forEach(link => {
+      link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href && href !== '#' && !href.startsWith('mailto:') && !href.startsWith('tel:')) {
+          e.preventDefault();
+          document.body.style.opacity = '0';
+          document.body.style.transition = 'opacity 0.3s ease-out';
+          setTimeout(() => {
+            window.location.href = href;
+          }, 300);
         }
       });
     });
@@ -104,6 +157,8 @@
       initHeaderScroll();
       initHeroSlideshow();
       initSmoothScroll();
+      initScrollAnimations();
+      initPageTransitions();
       initMobileMenu();
     });
   } else {
@@ -111,6 +166,8 @@
     initHeaderScroll();
     initHeroSlideshow();
     initSmoothScroll();
+    initScrollAnimations();
+    initPageTransitions();
     initMobileMenu();
   }
 })();
