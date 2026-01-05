@@ -200,24 +200,25 @@ body {
   margin: 0 auto;
   padding: 8rem 2rem 4rem;
   z-index: 10;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .slide-content {
   opacity: 0;
   position: absolute;
-  top: 8rem;
+  top: 50%;
   left: 2rem;
   right: 2rem;
+  transform: translateY(-50%);
   transition: opacity 0.8s ease-in-out;
   pointer-events: none;
 }
 
 .slide-content.active {
   opacity: 1;
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
   pointer-events: auto;
 }
 
@@ -349,6 +350,15 @@ body {
   padding: 6rem 2rem;
   max-width: 1400px;
   margin: 0 auto;
+}
+
+/* Section Banding - Alternating Backgrounds */
+.section-alt {
+  background-color: var(--color-zinc-900);
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
 }
 
 .section-header {
