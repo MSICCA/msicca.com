@@ -1,0 +1,8 @@
+# robots.txt for msicca.com
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /*.pdf$
+
+# Sitemaps
+Sitemap: https://msicca.com/sitemap.xml

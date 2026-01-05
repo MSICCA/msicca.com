@@ -1,0 +1,39 @@
+MSICCA | MRVL Soluciones de Ingeniería y Construcción, c.a.
+CAPABILITY STATEMENT
+
+====================================================================================
+
+This is a placeholder for the MSICCA Capability Statement PDF.
+
+The actual PDF document should be uploaded to this location:
+/docs/MSICCA_Capability_Statement.pdf
+
+For now, this placeholder file serves to:
+1. Indicate where the PDF should be placed
+2. Prevent 404 errors during development
+3. Provide information about the expected content
+
+====================================================================================
+
+ABOUT MSICCA:
+
+MSICCA | MRVL Soluciones de Ingeniería y Construcción, c.a. is a multidisciplinary 
+consultancy specializing in comprehensive engineering, architecture, and interior 
+design solutions.
+
+Core Services:
+- Engineering (Civil, Electrical, Mechanical)
+- Procurement & Logistics
+- Construction Management
+- Architecture & Design
+- Project Management
+
+Contact Information:
+- Email: contact@msicca.com / contacto@msicca.com
+- Phone: +58 (412) 127-3004
+- Location: Urb. Sucre, Calle 63. Maracaibo, ZU. 4005, Venezuela
+
+====================================================================================
+
+Please replace this file with the actual PDF capability statement.
+
