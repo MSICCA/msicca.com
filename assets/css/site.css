@@ -274,6 +274,50 @@ body {
   flex-wrap: wrap;
 }
 
+/* Simple Page Header (non-hero) */
+.page-header {
+  padding: 10rem 2rem 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-header .hero-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  border-radius: 50px;
+  color: var(--color-amber);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+}
+
+.page-header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--color-white);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.page-header h1 .highlight {
+  background: linear-gradient(135deg, var(--color-amber) 0%, var(--color-amber-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.page-header p {
+  font-size: 1.15rem;
+  color: var(--color-zinc-400);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
 .btn-primary {
   padding: 1rem 2rem;
   background: linear-gradient(135deg, var(--color-amber) 0%, var(--color-amber-dark) 100%);
