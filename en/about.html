@@ -1,427 +1,605 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- HTML Meta Tags -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="MSICCA | Learn about our trajectory, team and commitment to excellence in engineering, procurement and construction. Multidisciplinary consultancy in Maracaibo, Venezuela.">
-  <meta name="keywords" content="about us, team, engineering, construction, MSICCA, Maracaibo, Venezuela">
-  <meta name="author" content="MSICCA">
-  <meta name="robots" content="index, follow, max-image-preview:large">
+  <head>
+    <!-- HTML Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="MSICCA | Learn about our trajectory, team and commitment to excellence in engineering, procurement and construction. Multidisciplinary consultancy in Maracaibo, Venezuela."
+    />
+    <meta
+      name="keywords"
+      content="about us, team, engineering, construction, MSICCA, Maracaibo, Venezuela"
+    />
+    <meta name="author" content="MSICCA" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
 
-  <title>About Us | MSICCA | Engineering, Procurement & Construction</title>
-  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <title>About Us | MSICCA | Engineering, Procurement & Construction</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
 
-  <!-- Alternate Language Links -->
-  <link rel="alternate" hreflang="es-VE" href="https://msicca.com/nosotros.html">
-  <link rel="alternate" hreflang="en" href="https://msicca.com/en/about.html">
-  <link rel="alternate" hreflang="x-default" href="https://msicca.com/nosotros.html">
+    <!-- Alternate Language Links -->
+    <link
+      rel="alternate"
+      hreflang="es-VE"
+      href="https://msicca.com/nosotros.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://msicca.com/en/about.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://msicca.com/nosotros.html"
+    />
 
-  <!-- Google Fonts - Inter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/d235c54e89.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/d235c54e89.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Google Tag Manager -->
-  <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-P8HPBXR5');
-  </script>
-  <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-P8HPBXR5");
+    </script>
+    <!-- End Google Tag Manager -->
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://msicca.com/en/about.html">
-  <meta property="og:title" content="About Us | MSICCA">
-  <meta property="og:description" content="Learn about our trajectory, team and commitment to excellence in engineering, procurement and construction.">
-  <meta property="og:image" content="https://msicca.com/assets/images/Open_Graph_Responsively_20240201.jpg">
-  <meta property="og:site_name" content="MSICCA">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://msicca.com/en/about.html" />
+    <meta property="og:title" content="About Us | MSICCA" />
+    <meta
+      property="og:description"
+      content="Learn about our trajectory, team and commitment to excellence in engineering, procurement and construction."
+    />
+    <meta
+      property="og:image"
+      content="https://msicca.com/assets/images/Open_Graph_Responsively_20240201.jpg"
+    />
+    <meta property="og:site_name" content="MSICCA" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://msicca.com/en/about.html">
-  <meta name="twitter:title" content="About Us | MSICCA">
-  <meta name="twitter:description" content="Learn about our trajectory, team and commitment to excellence in engineering, procurement and construction.">
-  <meta name="twitter:image" content="https://msicca.com/assets/images/Open_Graph_Responsively_20240201.jpg">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://msicca.com/en/about.html" />
+    <meta name="twitter:title" content="About Us | MSICCA" />
+    <meta
+      name="twitter:description"
+      content="Learn about our trajectory, team and commitment to excellence in engineering, procurement and construction."
+    />
+    <meta
+      name="twitter:image"
+      content="https://msicca.com/assets/images/Open_Graph_Responsively_20240201.jpg"
+    />
 
-  <!-- Shared Site Styles -->
-  <link rel="stylesheet" href="/assets/css/site.css">
+    <!-- Shared Site Styles -->
+    <link rel="stylesheet" href="/assets/css/site.css" />
 
-  <style>
-    /* Page-specific styles */
-  </style>
-</head>
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8HPBXR5" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  <!-- End Google Tag Manager (noscript) -->
+    <style>
+      /* Page-specific styles */
+      .story-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
 
-  <!-- Header -->
-  <header class="header">
-    <div class="header-container">
-      <div class="logo">
-        <a href="/en/">
-          <img src="/assets/images/png/MSICCA_LOGOTIPO_BLANCO_1120X430PX.png" alt="MSICCA Logo">
-        </a>
+      .story-card {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: 12px;
+        padding: 1.25rem;
+        box-shadow: var(--shadow-xs);
+      }
+
+      .story-card h3 {
+        margin: 0 0 0.4rem 0;
+        color: var(--color-title);
+      }
+
+      .story-card p {
+        margin: 0;
+        color: var(--color-text);
+      }
+
+      .team-hero {
+        display: grid;
+        grid-template-columns: 1.05fr 1.95fr;
+        gap: 0;
+        background: #0f1112;
+        color: #f6f7f9;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: var(--shadow-sm, 0 10px 30px rgba(0, 0, 0, 0.35));
+        min-height: 70vh;
+      }
+
+      .team-hero-left {
+        padding: 3rem 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+        background: linear-gradient(135deg, #0f1112 0%, #16181b 55%);
+      }
+
+      .team-hero-left h2 {
+        font-size: clamp(2rem, 2.6vw, 2.8rem);
+        line-height: 1.1;
+        margin: 0.5rem 0 1rem;
+        color: #ffffff;
+      }
+
+      .team-hero-left p {
+        margin: 0;
+        color: #c9cbd1;
+        line-height: 1.6;
+      }
+
+      .team-hero-right {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 0;
+      }
+
+      .team-hero-card {
+        position: relative;
+        min-height: 360px;
+        background-size: cover;
+        background-position: center;
+        isolation: isolate;
+        transition: transform 0.35s ease, box-shadow 0.35s ease,
+          filter 0.35s ease;
+        cursor: pointer;
+      }
+
+      .team-hero-card.grayscale {
+        filter: grayscale(100%);
+      }
+
+      .team-hero-card::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 55%,
+          rgba(0, 0, 0, 0.7) 100%
+        );
+        z-index: 1;
+      }
+
+      .team-hero-card .card-meta {
+        position: absolute;
+        left: 24px;
+        right: 24px;
+        bottom: 24px;
+        z-index: 2;
+        color: #f6f7f9;
+      }
+
+      .team-hero-card .card-meta h5 {
+        margin: 0 0 0.2rem;
+        font-size: 1.05rem;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+      }
+
+      .team-hero-card .card-meta .role {
+        margin: 0;
+        color: #d0d2d8;
+        font-size: 0.95rem;
+      }
+
+      .card-link-overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 3;
+        text-indent: -9999px;
+        display: block;
+      }
+
+      .team-hero-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
+      }
+
+      @media (max-width: 1024px) {
+        .team-hero {
+          grid-template-columns: 1fr;
+        }
+
+        .team-hero-left {
+          padding: 2.5rem 1.75rem;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .team-hero-card {
+          min-height: 280px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-P8HPBXR5"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Header (loaded via partial) -->
+    <header class="header"></header>
+
+    <!-- Page Hero -->
+    <section
+      class="page-hero"
+      style="background-image: url('/assets/images/Somos_ARQUITECTURA.jpg')"
+    >
+      <div class="page-hero-content">
+        <h1>About Us</h1>
+        <p>
+          Over a decade transforming ideas into successful projects with
+          excellence, innovation and commitment
+        </p>
       </div>
-      <nav class="nav-desktop">
-        <ul class="nav-menu">
-          <li><a href="/en/">home.</a></li>
-          <li><a href="/en/about.html" class="active">about.</a></li>
-          <li><a href="/en/capabilities.html">capabilities.</a></li>
-          <li><a href="/en/deployments.html">deployments.</a></li>
-          <li><a href="/en/contact.html">contact.</a></li>
-        </ul>
-        <div class="lang-selector">
-          <a href="/nosotros.html">ES</a>
-          <span>|</span>
-          <a href="/en/about.html" class="active">EN</a>
-        </div>
-        <a href="/docs/MSICCA_Capability_Statement.pdf" class="btn-capability" target="_blank">
-          <i class="fas fa-file-pdf"></i> Capability (PDF)
-        </a>
-      </nav>
-      <button class="mobile-toggle" aria-label="Toggle menu">
-        <i class="fas fa-bars"></i>
-      </button>
-    </div>
-  </header>
+    </section>
 
-  <!-- Page Hero -->
-  <section class="page-hero" style="background-image: url('/assets/images/Somos_ARQUITECTURA.jpg');">
-    <div class="page-hero-content">
-      <h1>About Us</h1>
-      <p>Over a decade transforming ideas into successful projects with excellence, innovation and commitment</p>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section class="section">
+      <div class="section-header">
+        <span class="section-badge">WHO WE ARE</span>
+        <h2>MSICCA | MRVL Engineering & Construction Solutions</h2>
+        <p class="section-description">
+          We are a multidisciplinary consultancy specialized in engineering,
+          architecture and interior design based in Maracaibo, Venezuela. Since
+          our inception, we have been committed to technical excellence and
+          client satisfaction, delivering integrated solutions that exceed
+          expectations.
+        </p>
+      </div>
 
-  <!-- About Section -->
-  <section class="section">
-    <div class="section-header">
-      <span class="section-badge">WHO WE ARE</span>
-      <h2>MSICCA | MRVL Engineering & Construction Solutions</h2>
-      <p class="section-description">
-        We are a multidisciplinary consultancy specialized in engineering, architecture and interior design 
-        based in Maracaibo, Venezuela. Since our inception, we have been committed to technical excellence 
-        and client satisfaction, delivering integrated solutions that exceed expectations.
-      </p>
-    </div>
+      <div class="glass-panel">
+        <h3
+          style="
+            color: var(--color-white);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+          "
+        >
+          Our Mission
+        </h3>
+        <p
+          style="
+            color: var(--color-zinc-400);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+          "
+        >
+          To provide integrated engineering, procurement and construction
+          solutions that transform our clients' visions into tangible realities,
+          ensuring quality, efficiency and compliance with international
+          standards in every project.
+        </p>
 
-    <div class="glass-panel">
-      <h3 style="color: var(--color-white); font-size: 1.5rem; margin-bottom: 1rem;">Our Mission</h3>
-      <p style="color: var(--color-zinc-400); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
-        To provide integrated engineering, procurement and construction solutions that transform our clients' 
-        visions into tangible realities, ensuring quality, efficiency and compliance with international 
-        standards in every project.
-      </p>
+        <h3
+          style="
+            color: var(--color-white);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+          "
+        >
+          Our Vision
+        </h3>
+        <p
+          style="
+            color: var(--color-zinc-400);
+            font-size: 1.1rem;
+            line-height: 1.8;
+          "
+        >
+          To be recognized as the leading EPC solutions consultancy in the Zulia
+          region, expanding our national and international presence while
+          maintaining our commitment to technological innovation and
+          sustainability.
+        </p>
+      </div>
 
-      <h3 style="color: var(--color-white); font-size: 1.5rem; margin-bottom: 1rem;">Our Vision</h3>
-      <p style="color: var(--color-zinc-400); font-size: 1.1rem; line-height: 1.8;">
-        To be recognized as the leading EPC solutions consultancy in the Zulia region, expanding our 
-        national and international presence while maintaining our commitment to technological innovation 
-        and sustainability.
-      </p>
-    </div>
-  </section>
-
-  <!-- Timeline Section -->
-  <div class="band band--base">
-  <section class="section">
-    <div class="section-header">
-      <span class="section-badge">OUR HISTORY</span>
-      <h2>Growth Trajectory</h2>
-      <p class="section-description">
-        Since our inception, we have constantly evolved to offer world-class services
-      </p>
-    </div>
-
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-year">2013</div>
-        <div class="timeline-content">
-          <h3>MSICCA Foundation</h3>
+      <div class="story-grid">
+        <div class="story-card">
+          <h3>EPC delivery in LATAM</h3>
           <p>
-            Started operations as an engineering consultancy in Maracaibo, initially specializing 
-            in electrical projects and architectural design for the commercial sector.
+            Integrated engineering, procurement, and construction for partners
+            needing reliable execution in Venezuela and the region.
+          </p>
+        </div>
+        <div class="story-card">
+          <h3>Compliance & safety</h3>
+          <p>
+            NEC/NFPA/OSHA-aligned practices, documented QA/QC, and safety
+            controls suitable for international stakeholders.
+          </p>
+        </div>
+        <div class="story-card">
+          <h3>Digital coordination</h3>
+          <p>
+            BIM workflows, transparent reporting, and schedule control to keep
+            multi-party projects aligned and auditable.
           </p>
         </div>
       </div>
+    </section>
 
-      <div class="timeline-item">
-        <div class="timeline-year">2015</div>
-        <div class="timeline-content">
-          <h3>Service Expansion</h3>
-          <p>
-            Incorporation of procurement and supply management services, enabling us to offer 
-            more complete and integrated solutions to our clients.
+    <!-- Timeline Section -->
+    <div class="band band--soft">
+      <section class="section">
+        <div class="section-header">
+          <span class="section-badge">OUR HISTORY</span>
+          <h2>Growth Trajectory</h2>
+          <p class="section-description">
+            Since our inception, we have constantly evolved to offer world-class
+            services
           </p>
         </div>
-      </div>
 
-      <div class="timeline-item">
-        <div class="timeline-year">2018</div>
-        <div class="timeline-content">
-          <h3>Industrial Sector Diversification</h3>
-          <p>
-            Entry into the industrial market with plant modernization and critical systems 
-            projects, expanding our technical capabilities.
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2013</div>
+            <div class="timeline-content">
+              <h3>MSICCA Foundation</h3>
+              <p>
+                Started operations as an engineering consultancy in Maracaibo,
+                initially specializing in electrical projects and architectural
+                design for the commercial sector.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2015</div>
+            <div class="timeline-content">
+              <h3>Service Expansion</h3>
+              <p>
+                Incorporation of procurement and supply management services,
+                enabling us to offer more complete and integrated solutions to
+                our clients.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2018</div>
+            <div class="timeline-content">
+              <h3>Industrial Sector Diversification</h3>
+              <p>
+                Entry into the industrial market with plant modernization and
+                critical systems projects, expanding our technical capabilities.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2021</div>
+            <div class="timeline-content">
+              <h3>International Standards Certification</h3>
+              <p>
+                Adoption of NEC/NFPA/OSHA standards and DUNS/UEI registration,
+                positioning us to serve international stakeholders and prime
+                contractors.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-content">
+              <h3>Digital Transformation</h3>
+              <p>
+                Implementation of BIM technologies and advanced project
+                management platforms, enhancing our efficiency and collaborative
+                capabilities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Team Section -->
+    <div class="band band--base">
+      <section class="section">
+        <div class="section-header"></div>
+        <div class="team-hero">
+          <div class="team-hero-left">
+            <div>
+              <span class="section-badge">OUR TEAM</span>
+              <h2>Multidisciplinary Expertise</h2>
+              <p>
+                Diverse disciplines working in synergy to deliver outstanding
+                results.
+              </p>
+              <p>
+                Proven leadership in engineering, architecture, and construction
+                for industrial, commercial, and corporate projects.
+              </p>
+            </div>
+          </div>
+          <div class="team-hero-right">
+            <div
+              class="team-hero-card"
+              style="background-image: url('/assets/images/Enrique_Marval.png')"
+            >
+              <a class="card-link-overlay" href="/en/cv/enrique-marval.html">
+                Enrique Marval CV
+              </a>
+              <div class="card-meta">
+                <h5>Enrique Marval</h5>
+                <p class="role">Director of Operations</p>
+                <p>Electrical Engineer</p>
+              </div>
+            </div>
+            <div
+              class="team-hero-card"
+              style="background-image: url('/assets/images/carlos_marval.png')"
+            >
+              <a class="card-link-overlay" href="/en/cv/carlos-marval.html">
+                Carlos Marval CV
+              </a>
+              <div class="card-meta">
+                <h5>Carlos Marval</h5>
+                <p class="role">Director of Architecture</p>
+                <p>Architect</p>
+              </div>
+            </div>
+            <div
+              class="team-hero-card grayscale"
+              style="
+                background-image: url('/assets/images/maria_urdaneta.jpeg');
+              "
+            >
+              <a class="card-link-overlay" href="/en/cv/maria-urdaneta.html">
+                María Urdaneta CV
+              </a>
+              <div class="card-meta">
+                <h5>María Urdaneta</h5>
+                <p class="role">Construction Management</p>
+                <p>Architect</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Values Section -->
+    <div class="band band--soft">
+      <section class="section">
+        <div class="section-header">
+          <span class="section-badge">OUR VALUES</span>
+          <h2>What Drives Us</h2>
+          <p class="section-description">
+            Core principles that guide our actions and define our company
+            culture
           </p>
         </div>
-      </div>
 
-      <div class="timeline-item">
-        <div class="timeline-year">2021</div>
-        <div class="timeline-content">
-          <h3>International Standards Certification</h3>
-          <p>
-            Adoption of NEC/NFPA/OSHA standards and DUNS/UEI registration, positioning us 
-            to serve international stakeholders and prime contractors.
-          </p>
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <h3>Excellence</h3>
+            <p>
+              Commitment to the highest standards of quality in every project
+              phase, from initial design through final delivery and beyond.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Innovation</h3>
+            <p>
+              Continuous adoption of cutting-edge technologies and methodologies
+              to deliver more efficient, sustainable solutions.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3>Integrity</h3>
+            <p>
+              Transparent, ethical business practices that build lasting trust
+              with clients, partners, and stakeholders.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Collaboration</h3>
+            <p>
+              Fostering teamwork and open communication across all disciplines
+              to achieve synergistic project outcomes.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3>Sustainability</h3>
+            <p>
+              Integrating environmentally responsible practices and
+              energy-efficient solutions in all our designs and implementations.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>Reliability</h3>
+            <p>
+              Consistent delivery on commitments, meeting deadlines and budgets
+              while maintaining unwavering quality standards.
+            </p>
+          </div>
         </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-year">2024</div>
-        <div class="timeline-content">
-          <h3>Digital Transformation</h3>
-          <p>
-            Implementation of BIM technologies and advanced project management platforms, 
-            enhancing our efficiency and collaborative capabilities.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  </div>
-
-  <!-- Team Section -->
-  <div class="band band--soft">
-  <section class="section">
-    <div class="section-header">
-      <span class="section-badge">OUR TEAM</span>
-      <h2>Multidisciplinary Expertise</h2>
-      <p class="section-description">
-        Our team brings together diverse disciplines working in synergy to deliver exceptional results
-      </p>
-    </div>
-
-    <div class="team-grid">
-      <div class="team-member">
-        <div class="team-member-icon">
-          <i class="fas fa-hard-hat"></i>
-        </div>
-        <h3>Engineering</h3>
-        <p class="role">Technical Leadership</p>
-        <p>
-          Experienced engineers specialized in electrical, mechanical, and civil disciplines, 
-          ensuring technical excellence and regulatory compliance in every project.
-        </p>
-      </div>
-
-      <div class="team-member">
-        <div class="team-member-icon">
-          <i class="fas fa-drafting-compass"></i>
-        </div>
-        <h3>Architecture</h3>
-        <p class="role">Design Excellence</p>
-        <p>
-          Creative architects who blend functionality with aesthetics, delivering spaces that 
-          enhance user experience while meeting all technical requirements.
-        </p>
-      </div>
-
-      <div class="team-member">
-        <div class="team-member-icon">
-          <i class="fas fa-project-diagram"></i>
-        </div>
-        <h3>Project Management</h3>
-        <p class="role">Operational Excellence</p>
-        <p>
-          Certified project managers utilizing industry best practices and modern tools to 
-          ensure on-time, on-budget delivery with quality assurance.
-        </p>
-      </div>
-
-      <div class="team-member">
-        <div class="team-member-icon">
-          <i class="fas fa-shield-alt"></i>
-        </div>
-        <h3>Quality & Safety</h3>
-        <p class="role">Standards Compliance</p>
-        <p>
-          Dedicated professionals ensuring adherence to international standards (NEC/NFPA/OSHA) 
-          and maintaining rigorous quality control throughout project lifecycles.
-        </p>
-      </div>
-    </div>
-  </section>
-  </div>
-
-  <!-- Values Section -->
-  <section class="section">
-    <div class="section-header">
-      <span class="section-badge">OUR VALUES</span>
-      <h2>What Drives Us</h2>
-      <p class="section-description">
-        Core principles that guide our actions and define our company culture
-      </p>
+      </section>
     </div>
 
-    <div class="values-grid">
-      <div class="value-card">
-        <div class="value-icon">
-          <i class="fas fa-medal"></i>
+    <!-- CTA Section -->
+    <div class="band band--base">
+      <section class="section">
+        <div class="cta-section">
+          <h2>Ready for Your Next Project?</h2>
+          <p>Let's discuss how we can transform your vision into reality.</p>
+          <div class="hero-cta" style="justify-content: center">
+            <a href="mailto:contacto@msicca.com" class="btn-primary"
+              >Request Proposal</a
+            >
+            <a href="tel:+584121273004" class="btn-secondary">Call Now</a>
+          </div>
         </div>
-        <h3>Excellence</h3>
-        <p>
-          Commitment to the highest standards of quality in every project phase, from initial design 
-          through final delivery and beyond.
-        </p>
-      </div>
-
-      <div class="value-card">
-        <div class="value-icon">
-          <i class="fas fa-lightbulb"></i>
-        </div>
-        <h3>Innovation</h3>
-        <p>
-          Continuous adoption of cutting-edge technologies and methodologies to deliver more efficient, 
-          sustainable solutions.
-        </p>
-      </div>
-
-      <div class="value-card">
-        <div class="value-icon">
-          <i class="fas fa-handshake"></i>
-        </div>
-        <h3>Integrity</h3>
-        <p>
-          Transparent, ethical business practices that build lasting trust with clients, partners, 
-          and stakeholders.
-        </p>
-      </div>
-
-      <div class="value-card">
-        <div class="value-icon">
-          <i class="fas fa-users"></i>
-        </div>
-        <h3>Collaboration</h3>
-        <p>
-          Fostering teamwork and open communication across all disciplines to achieve synergistic 
-          project outcomes.
-        </p>
-      </div>
-
-      <div class="value-card">
-        <div class="value-icon">
-          <i class="fas fa-leaf"></i>
-        </div>
-        <h3>Sustainability</h3>
-        <p>
-          Integrating environmentally responsible practices and energy-efficient solutions in all 
-          our designs and implementations.
-        </p>
-      </div>
-
-      <div class="value-card">
-        <div class="value-icon">
-          <i class="fas fa-clock"></i>
-        </div>
-        <h3>Reliability</h3>
-        <p>
-          Consistent delivery on commitments, meeting deadlines and budgets while maintaining 
-          unwavering quality standards.
-        </p>
-      </div>
+      </section>
     </div>
-  </section>
 
-  <!-- CTA Section -->
-  <div class="band band--base">
-  <section class="section">
-    <div class="cta-section">
-      <h2>Ready for Your Next Project?</h2>
-      <p>Let's discuss how we can transform your vision into reality.</p>
-      <div class="hero-cta" style="justify-content: center;">
-        <a href="mailto:contacto@msicca.com" class="btn-primary">Request Proposal</a>
-        <a href="tel:+584121273004" class="btn-secondary">Call Now</a>
-      </div>
-    </div>
-  </section>
-  </div>
+    <!-- Footer (loaded via partial) -->
+    <footer class="footer"></footer>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-section">
-        <div class="footer-logo">
-          <img src="/assets/images/png/MSICCA_LOGOTIPO_BLANCO_1120X430PX.png" alt="MSICCA Logo">
-        </div>
-        <p style="color: var(--color-zinc-400); margin-bottom: 1rem; max-width: 300px;">
-          Multidisciplinary consultancy in engineering, architecture and interior design.
-        </p>
-        <div class="social-links">
-          <a href="https://www.facebook.com/msiccave" target="_blank" aria-label="Facebook">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://x.com/msiccave" target="_blank" aria-label="Twitter">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="https://instagram.com/msiccave" target="_blank" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://www.linkedin.com/company/msiccave/" target="_blank" aria-label="LinkedIn">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </div>
-      </div>
-      <div class="footer-section">
-        <h3>Navigation</h3>
-        <ul class="footer-links">
-          <li><a href="/en/">Home</a></li>
-          <li><a href="/en/about.html">About</a></li>
-          <li><a href="/en/capabilities.html">Capabilities</a></li>
-          <li><a href="/en/deployments.html">Deployments</a></li>
-          <li><a href="/en/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Services</h3>
-        <ul class="footer-links">
-          <li><a href="/en/capabilities.html">Engineering</a></li>
-          <li><a href="/en/capabilities.html">Procurement</a></li>
-          <li><a href="/en/capabilities.html">Construction</a></li>
-          <li><a href="/en/capabilities.html">Architecture</a></li>
-          <li><a href="/en/capabilities.html">Interior Design</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Contact</h3>
-        <ul class="footer-links">
-          <li>Urb. Sucre, Calle 63</li>
-          <li>Maracaibo, ZU. 4005</li>
-          <li>Venezuela</li>
-          <li><a href="mailto:contacto@msicca.com">contacto@msicca.com</a></li>
-          <li><a href="tel:+584121273004">+58 (412) 127-3004</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>Copyright © 2025 MSICCA | MRVL Soluciones de Ingeniería y Construcción, c.a.</p>
-      <p>Made with <i class="fas fa-heart" style="color: var(--color-amber);"></i> by nrkmrvl.coder</p>
-    </div>
-  </footer>
-
-  <!-- Shared Site JavaScript -->
-  <script src="/assets/js/site.js"></script>
-</body>
+    <!-- Shared Site JavaScript -->
+    <script src="/assets/js/partials.js"></script>
+    <script src="/assets/js/site.js"></script>
+  </body>
 </html>
