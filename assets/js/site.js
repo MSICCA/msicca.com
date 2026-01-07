@@ -206,6 +206,7 @@
       "/cv/enrique-marval.html": "/en/cv/enrique-marval.html",
       "/cv/carlos-marval.html": "/en/cv/carlos-marval.html",
       "/cv/maria-urdaneta.html": "/en/cv/maria-urdaneta.html",
+      "/cv/angel-rojas.html": "/en/cv/angel-rojas.html",
     },
     en: {
       "/en/": "/",
@@ -218,6 +219,7 @@
       "/en/cv/enrique-marval.html": "/cv/enrique-marval.html",
       "/en/cv/carlos-marval.html": "/cv/carlos-marval.html",
       "/en/cv/maria-urdaneta.html": "/cv/maria-urdaneta.html",
+      "/en/cv/angel-rojas.html": "/cv/angel-rojas.html",
     },
   };
 
