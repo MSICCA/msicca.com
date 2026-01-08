@@ -44,10 +44,10 @@
     />
     <link
       rel="preconnect"
-      href="https://ka-f.fontawesome.com"
+      href="https://cdnjs.cloudflare.com"
       crossorigin="anonymous"
     />
-    <link rel="dns-prefetch" href="https://ka-f.fontawesome.com" />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -79,7 +79,7 @@
     />
     <meta
       property="og:image"
-      content="https://msicca.com/assets/images/Open_Graph_Responsively_20240201.jpg"
+      content="https://msicca.com/assets/images/webp/Open_Graph_Responsively_20240201.webp"
     />
     <meta property="og:site_name" content="MSICCA" />
 
@@ -93,7 +93,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://msicca.com/assets/images/Open_Graph_Responsively_20240201.jpg"
+      content="https://msicca.com/assets/images/webp/Open_Graph_Responsively_20240201.webp"
     />
 
     <!-- Shared Site Styles -->
@@ -416,7 +416,13 @@
     <!-- Page Hero -->
     <section
       class="page-hero"
-      style="background-image: url('/assets/images/Somos_ARQUITECTURA.jpg')"
+      style="
+        background-image: image-set(
+          url('/assets/images/webp/Somos_ARQUITECTURA.webp') 1x,
+          url('/assets/images/webp/Somos_ARQUITECTURA.webp') 2x
+        );
+        background-image: url('/assets/images/Somos_ARQUITECTURA.jpg');
+      "
     >
       <div class="page-hero-content">
         <h1>About Us</h1>

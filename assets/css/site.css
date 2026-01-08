@@ -77,8 +77,10 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-brands-400.woff2")
-    format("woff2");
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.woff")
+      format("woff");
 }
 
 .fa,
@@ -1319,7 +1321,10 @@ form .btn-primary:hover {
 }
 
 .footer .footer-logo img {
-  height: 40px;
+  height: auto;
+  max-height: 40px;
+  width: auto;
+  max-width: 100%;
   margin-bottom: 1rem;
 }
 

@@ -31,8 +31,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin="anonymous" />
-    <link rel="dns-prefetch" href="https://ka-f.fontawesome.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
       rel="stylesheet"
@@ -64,7 +64,7 @@
     />
     <meta
       property="og:image"
-      content="https://msicca.com/assets/images/Open_Graph_Responsively_20240201.jpg"
+      content="https://msicca.com/assets/images/webp/Open_Graph_Responsively_20240201.webp"
     />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -82,7 +82,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://msicca.com/assets/images/Open_Graph_Responsively_20240201.jpg"
+      content="https://msicca.com/assets/images/webp/Open_Graph_Responsively_20240201.webp"
     />
 
     <!-- Shared Site Styles -->
@@ -107,7 +107,13 @@
     <!-- Page Hero -->
     <section
       class="page-hero"
-      style="background-image: url('/assets/images/Somos_DISEÑO_INTERIOR.jpg')"
+      style="
+        background-image: image-set(
+          url('/assets/images/webp/Somos_DISEÑO_INTERIOR.webp') 1x,
+          url('/assets/images/webp/Somos_DISEÑO_INTERIOR.webp') 2x
+        );
+        background-image: url('/assets/images/Somos_DISEÑO_INTERIOR.jpg');
+      "
     >
       <div class="page-hero-content">
         <h1>Testimonials</h1>
@@ -282,7 +288,7 @@
         <div class="projects-grid">
           <div class="project-card">
             <img
-              src="/assets/images/Somos_INGENIERIA.jpg"
+              src="/assets/images/webp/Somos_INGENIERIA.webp"
               alt="Grid Stability Project"
               class="project-image"
             />
@@ -307,7 +313,7 @@
           </div>
           <div class="project-card">
             <img
-              src="/assets/images/Somos_CONSTRUCCION.jpg"
+              src="/assets/images/webp/Somos_CONSTRUCCION.webp"
               alt="Commercial Infrastructure"
               class="project-image"
             />
@@ -330,7 +336,7 @@
           </div>
           <div class="project-card">
             <img
-              src="/assets/images/Somos_SUMINISTRO.jpg"
+              src="/assets/images/webp/Somos_SUMINISTRO.webp"
               alt="Industrial Procurement"
               class="project-image"
             />
