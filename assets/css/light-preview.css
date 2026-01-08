@@ -27,9 +27,9 @@ body.light-preview .light-preview-mid .section-description {
 }
 
 body.light-preview .light-preview-mid .section-badge {
-  background: rgba(234, 179, 8, 0.15);
-  border: 1px solid rgba(234, 179, 8, 0.35);
-  color: #b45309;
+  background: #fde68a;
+  border: 1px solid #f59e0b;
+  color: #7a2e0b;
 }
 
 body.light-preview .light-preview-mid .glass-panel {
