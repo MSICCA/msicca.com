@@ -25,6 +25,15 @@
   let partialsReady = false;
   let initialized = false;
 
+  // Schedule non-critical work when the main thread is idle
+  function scheduleIdle(fn) {
+    if ("requestIdleCallback" in window) {
+      window.requestIdleCallback(fn, { timeout: 200 });
+    } else {
+      setTimeout(fn, 0);
+    }
+  }
+
   // Header scroll behavior - transparent to opaque
   function initHeaderScroll() {
     const header = document.querySelector(".header");
@@ -50,8 +59,8 @@
       }
     }
 
-    // Initial check
-    applyHeaderState();
+    // Initial check on next frame to avoid sync layout
+    requestAnimationFrame(applyHeaderState);
 
     // Listen to scroll events (throttled via rAF to avoid repeated reflows)
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -234,38 +243,40 @@
 
   // Highlight current nav item and wire language toggles to the paired page
   function initNavState() {
-    const currentPath = normalizePath(window.location.pathname);
-    const isEnglish = currentPath.startsWith("/en/");
+    // Defer DOM writes to the next frame to avoid forcing layout during load
+    requestAnimationFrame(() => {
+      const currentPath = normalizePath(window.location.pathname);
+      const isEnglish = currentPath.startsWith("/en/");
 
-    // Active state on nav menu
-    document.querySelectorAll(".nav-menu a").forEach((link) => {
-      const hrefPath = normalizePath(
-        new URL(link.getAttribute("href"), window.location.origin).pathname
-      );
-      if (hrefPath === currentPath) {
-        link.classList.add("active");
-      } else {
-        link.classList.remove("active");
-      }
-    });
+      // Active state on nav menu
+      document.querySelectorAll(".nav-menu a").forEach((link) => {
+        const hrefPath = normalizePath(
+          new URL(link.getAttribute("href"), window.location.origin).pathname
+        );
+        const isActive = hrefPath === currentPath;
+        if (link.classList.contains("active") !== isActive) {
+          link.classList.toggle("active", isActive);
+        }
+      });
 
-    // Language toggle targets
-    const englishTarget = isEnglish
-      ? currentPath
-      : languageMap.es[currentPath] || "/en/";
-    const spanishTarget = isEnglish
-      ? languageMap.en[currentPath] || "/"
-      : currentPath;
+      // Language toggle targets
+      const englishTarget = isEnglish
+        ? currentPath
+        : languageMap.es[currentPath] || "/en/";
+      const spanishTarget = isEnglish
+        ? languageMap.en[currentPath] || "/"
+        : currentPath;
 
-    document.querySelectorAll(".lang-selector a").forEach((link) => {
-      const label = (link.textContent || "").trim().toUpperCase();
-      if (label === "ES") {
-        link.href = spanishTarget;
-        link.classList.toggle("active", !isEnglish);
-      } else if (label === "EN") {
-        link.href = englishTarget;
-        link.classList.toggle("active", isEnglish);
-      }
+      document.querySelectorAll(".lang-selector a").forEach((link) => {
+        const label = (link.textContent || "").trim().toUpperCase();
+        if (label === "ES") {
+          link.href = spanishTarget;
+          link.classList.toggle("active", !isEnglish);
+        } else if (label === "EN") {
+          link.href = englishTarget;
+          link.classList.toggle("active", isEnglish);
+        }
+      });
     });
   }
 
@@ -273,12 +284,16 @@
     if (initialized || !domReady || !partialsReady) return;
     initialized = true;
     initNavState();
-    initHeaderScroll();
-    initHeroSlideshow();
-    initSmoothScroll();
-    initScrollAnimations();
-    initPageTransitions();
-    initMobileMenu();
+
+    // Defer everything else to idle to avoid layout work on load
+    scheduleIdle(() => {
+      initHeaderScroll();
+      initSmoothScroll();
+      initMobileMenu();
+      initHeroSlideshow();
+      initScrollAnimations();
+      initPageTransitions();
+    });
   }
 
   document.addEventListener("DOMContentLoaded", function () {
