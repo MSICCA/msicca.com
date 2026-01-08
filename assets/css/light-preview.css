@@ -1,0 +1,199 @@
+/*
+ * Light preview overrides for HOME (ES) preview page.
+ * IMPORTANT: Do NOT affect header/navbar/hero/CTA/footer.
+ * Scope to middle sections only via `.light-preview-mid`.
+ */
+
+body.light-preview .light-preview-mid.band--base {
+  background: #f7f8fb;
+}
+
+body.light-preview .light-preview-mid.band--soft {
+  background: linear-gradient(180deg, #eef1f7 0%, #e3e7ef 100%);
+  border-top: 1px solid rgba(15, 23, 42, 0.05);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.05);
+}
+
+body.light-preview .light-preview-mid .section {
+  color: #1f2937;
+}
+
+body.light-preview .light-preview-mid .section h2 {
+  color: #0f172a;
+}
+
+body.light-preview .light-preview-mid .section-description {
+  color: #475467;
+}
+
+body.light-preview .light-preview-mid .section-badge {
+  background: rgba(234, 179, 8, 0.15);
+  border: 1px solid rgba(234, 179, 8, 0.35);
+  color: #b45309;
+}
+
+body.light-preview .light-preview-mid .glass-panel {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 40px rgba(15, 23, 42, 0.08);
+  color: #111827;
+}
+
+body.light-preview .light-preview-mid .glass-panel:hover {
+  border-color: #d1d5db;
+  box-shadow: 0 16px 48px rgba(15, 23, 42, 0.12);
+}
+
+body.light-preview .light-preview-mid .service-card h3 {
+  color: #0f172a;
+}
+
+body.light-preview .light-preview-mid .service-card p,
+body.light-preview .light-preview-mid .service-card ul,
+body.light-preview .light-preview-mid .service-card ul li {
+  color: #475467;
+}
+
+body.light-preview .light-preview-mid .service-icon {
+  box-shadow: 0 8px 24px rgba(234, 179, 8, 0.25);
+}
+
+body.light-preview .light-preview-mid .projects-grid {
+  gap: 2.25rem;
+}
+
+body.light-preview .light-preview-mid .project-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 14px 50px rgba(15, 23, 42, 0.08);
+}
+
+body.light-preview .light-preview-mid .project-tag {
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  color: #c2410c;
+}
+
+body.light-preview .light-preview-mid .project-card h3 {
+  color: #0f172a;
+}
+
+body.light-preview .light-preview-mid .project-card p,
+body.light-preview .light-preview-mid .project-case p {
+  color: #475467;
+}
+
+body.light-preview .light-preview-mid .project-case h4 {
+  color: #b45309;
+}
+
+body.light-preview .light-preview-mid .clients-grid {
+  gap: 1.5rem;
+}
+
+body.light-preview .light-preview-mid .client-logo {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 12px 36px rgba(15, 23, 42, 0.06);
+  padding: 1.5rem;
+  opacity: 0.9;
+}
+
+body.light-preview .light-preview-mid .client-logo:hover {
+  opacity: 1;
+  box-shadow: 0 16px 48px rgba(30, 35, 48, 0.08);
+}
+
+body.light-preview .light-preview-mid .client-logo img {
+  filter: none;
+  max-width: 220px;
+  max-height: 120px;
+}
+
+/* About (Nosotros) page-specific components (still scoped) */
+body.light-preview .light-preview-mid {
+  --color-surface: #ffffff;
+  --color-border: rgba(15, 23, 42, 0.12);
+  --color-title: #0f172a;
+  --color-text: #475467;
+  --shadow-xs: 0 12px 40px rgba(15, 23, 42, 0.08);
+  --shadow-sm: 0 12px 40px rgba(15, 23, 42, 0.08);
+
+  /* Re-map a few shared tokens used by inline styles inside middle sections */
+  --color-white: #0f172a;
+  --color-zinc-300: #334155;
+  --color-zinc-400: #475467;
+}
+
+/* Contact page form: override inline dark inputs inside middle sections */
+body.light-preview .light-preview-mid input,
+body.light-preview .light-preview-mid textarea,
+body.light-preview .light-preview-mid select {
+  background: rgba(255, 255, 255, 0.9) !important;
+  color: #0f172a !important;
+  border-color: rgba(245, 158, 11, 0.28) !important;
+}
+
+body.light-preview .light-preview-mid input::placeholder,
+body.light-preview .light-preview-mid textarea::placeholder {
+  color: #667085 !important;
+}
+
+body.light-preview .light-preview-mid select option {
+  color: #0f172a;
+}
+
+body.light-preview .light-preview-mid .story-card,
+body.light-preview .light-preview-mid .team-intro,
+body.light-preview .light-preview-mid .team-profile {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+  box-shadow: var(--shadow-xs);
+}
+
+body.light-preview .light-preview-mid .story-card h3,
+body.light-preview .light-preview-mid .team-meta h4 {
+  color: var(--color-title);
+}
+
+body.light-preview .light-preview-mid .story-card p,
+body.light-preview .light-preview-mid .team-meta .bio {
+  color: var(--color-text);
+}
+
+body.light-preview .light-preview-mid .team-meta .role {
+  color: #667085;
+}
+
+body.light-preview .light-preview-mid .team-hero {
+  background: #ffffff;
+  color: #0f172a;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+body.light-preview .light-preview-mid .team-hero-left {
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2f6 55%);
+}
+
+body.light-preview .light-preview-mid .team-hero-left h2 {
+  color: #0f172a;
+}
+
+body.light-preview .light-preview-mid .team-hero-left p {
+  color: #475467;
+}
+
+body.light-preview .light-preview-mid .value-card {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.10);
+  box-shadow: 0 12px 36px rgba(15, 23, 42, 0.06);
+}
+
+body.light-preview .light-preview-mid .value-card h3 {
+  color: #0f172a;
+}
+
+body.light-preview .light-preview-mid .value-card p {
+  color: #475467;
+}

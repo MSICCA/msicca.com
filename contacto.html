@@ -205,140 +205,38 @@
           </p>
         </div>
 
-        <div class="glass-panel" style="max-width: 800px; margin: 0 auto">
-          <form id="contact-form" style="display: grid; gap: 1.5rem">
-            <div
-              style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem"
-            >
+        <div class="glass-panel contact-form-card">
+          <form id="contact-form" class="contact-form">
+            <div class="contact-row contact-row-2">
               <div>
-                <label
-                  style="
-                    display: block;
-                    color: var(--color-zinc-300);
-                    margin-bottom: 0.5rem;
-                    font-weight: 500;
-                  "
-                  >Nombre *</label
-                >
-                <input
-                  type="text"
-                  name="name"
-                  required
-                  style="
-                    width: 100%;
-                    padding: 0.75rem;
-                    background: rgba(0, 0, 0, 0.3);
-                    border: 1px solid rgba(245, 158, 11, 0.2);
-                    border-radius: 6px;
-                    color: var(--color-white);
-                    font-family: var(--font-inter);
-                  "
-                />
+                <label class="contact-label">Nombre *</label>
+                <input type="text" name="name" required class="contact-input" />
               </div>
               <div>
-                <label
-                  style="
-                    display: block;
-                    color: var(--color-zinc-300);
-                    margin-bottom: 0.5rem;
-                    font-weight: 500;
-                  "
-                  >Empresa</label
-                >
-                <input
-                  type="text"
-                  name="company"
-                  style="
-                    width: 100%;
-                    padding: 0.75rem;
-                    background: rgba(0, 0, 0, 0.3);
-                    border: 1px solid rgba(245, 158, 11, 0.2);
-                    border-radius: 6px;
-                    color: var(--color-white);
-                    font-family: var(--font-inter);
-                  "
-                />
+                <label class="contact-label">Empresa</label>
+                <input type="text" name="company" class="contact-input" />
               </div>
             </div>
 
-            <div
-              style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem"
-            >
+            <div class="contact-row contact-row-2">
               <div>
-                <label
-                  style="
-                    display: block;
-                    color: var(--color-zinc-300);
-                    margin-bottom: 0.5rem;
-                    font-weight: 500;
-                  "
-                  >Email *</label
-                >
+                <label class="contact-label">Email *</label>
                 <input
                   type="email"
                   name="email"
                   required
-                  style="
-                    width: 100%;
-                    padding: 0.75rem;
-                    background: rgba(0, 0, 0, 0.3);
-                    border: 1px solid rgba(245, 158, 11, 0.2);
-                    border-radius: 6px;
-                    color: var(--color-white);
-                    font-family: var(--font-inter);
-                  "
+                  class="contact-input"
                 />
               </div>
               <div>
-                <label
-                  style="
-                    display: block;
-                    color: var(--color-zinc-300);
-                    margin-bottom: 0.5rem;
-                    font-weight: 500;
-                  "
-                  >Teléfono *</label
-                >
-                <input
-                  type="tel"
-                  name="phone"
-                  required
-                  style="
-                    width: 100%;
-                    padding: 0.75rem;
-                    background: rgba(0, 0, 0, 0.3);
-                    border: 1px solid rgba(245, 158, 11, 0.2);
-                    border-radius: 6px;
-                    color: var(--color-white);
-                    font-family: var(--font-inter);
-                  "
-                />
+                <label class="contact-label">Teléfono *</label>
+                <input type="tel" name="phone" required class="contact-input" />
               </div>
             </div>
 
             <div>
-              <label
-                style="
-                  display: block;
-                  color: var(--color-zinc-300);
-                  margin-bottom: 0.5rem;
-                  font-weight: 500;
-                "
-                >Tipo de Proyecto *</label
-              >
-              <select
-                name="project_type"
-                required
-                style="
-                  width: 100%;
-                  padding: 0.75rem;
-                  background: rgba(0, 0, 0, 0.3);
-                  border: 1px solid rgba(245, 158, 11, 0.2);
-                  border-radius: 6px;
-                  color: var(--color-white);
-                  font-family: var(--font-inter);
-                "
-              >
+              <label class="contact-label">Tipo de Proyecto *</label>
+              <select name="project_type" required class="contact-input">
                 <option value="">Seleccione una opción</option>
                 <option value="ingenieria">Ingeniería Eléctrica</option>
                 <option value="arquitectura">Arquitectura y Diseño</option>
@@ -350,44 +248,18 @@
             </div>
 
             <div>
-              <label
-                style="
-                  display: block;
-                  color: var(--color-zinc-300);
-                  margin-bottom: 0.5rem;
-                  font-weight: 500;
-                "
-                >Mensaje *</label
-              >
+              <label class="contact-label">Mensaje *</label>
               <textarea
                 name="message"
                 required
                 rows="6"
-                style="
-                  width: 100%;
-                  padding: 0.75rem;
-                  background: rgba(0, 0, 0, 0.3);
-                  border: 1px solid rgba(245, 158, 11, 0.2);
-                  border-radius: 6px;
-                  color: var(--color-white);
-                  font-family: var(--font-inter);
-                  resize: vertical;
-                "
+                class="contact-input"
               ></textarea>
             </div>
 
             <div>
-              <button type="submit" class="btn-primary" style="width: 100%">
-                Enviar Mensaje
-              </button>
-              <p
-                style="
-                  color: var(--color-zinc-400);
-                  font-size: 0.9rem;
-                  margin-top: 1rem;
-                  text-align: center;
-                "
-              >
+              <button type="submit" class="btn-primary">Enviar Mensaje</button>
+              <p class="contact-note">
                 * Campos obligatorios. Nos comprometemos a proteger tu
                 información y responder en un plazo de 24-48 horas.
               </p>
