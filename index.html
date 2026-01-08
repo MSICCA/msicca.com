@@ -67,17 +67,17 @@
   <!-- Hero Section with Slideshow -->
   <section class="hero" id="inicio">
     <!-- Slide 1: INGENIERIA -->
-    <div class="hero-slide active" style="background-image: url('/assets/images/webp/Somos_INGENIERIA.webp');"></div>
     <!-- Slide 2: ARQUITECTURA -->
     <div class="hero-slide" style="background-image: url('/assets/images/webp/Somos_ARQUITECTURA.webp');"></div>
     <!-- Slide 3: CONSTRUCCION -->
-    <div class="hero-slide" style="background-image: url('/assets/images/webp/Somos_CONSTRUCCION.webp');"></div>
     <!-- Slide 4: SERVICIOS (from services page) -->
-    <div class="hero-slide" style="background-image: url('/assets/images/webp/Somos_INGENIERIA.webp');"></div>
     <!-- Slide 5: PROYECTOS (from projects page) -->
-    <div class="hero-slide" style="background-image: url('/assets/images/webp/Somos_CONSTRUCCION.webp');"></div>
     <!-- Slide 6: CONTACTO (from contact page) -->
     <div class="hero-slide" style="background-image: url('/assets/images/webp/Somos_ARQUITECTURA.webp');"></div>
+      <div class="hero-slide active" style="background-image: image-set(url('/assets/images/webp/Somos_INGENIERIA_1600.webp') 1x, url('/assets/images/webp/Somos_INGENIERIA_3200.webp') 2x); background-image: url('/assets/images/webp/Somos_INGENIERIA_1600.webp');"></div>
+      <div class="hero-slide" style="background-image: image-set(url('/assets/images/webp/Somos_CONSTRUCCION_1600.webp') 1x, url('/assets/images/webp/Somos_CONSTRUCCION_3200.webp') 2x); background-image: url('/assets/images/webp/Somos_CONSTRUCCION_1600.webp');"></div>
+      <div class="hero-slide" style="background-image: image-set(url('/assets/images/webp/Somos_INGENIERIA_1600.webp') 1x, url('/assets/images/webp/Somos_INGENIERIA_3200.webp') 2x); background-image: url('/assets/images/webp/Somos_INGENIERIA_1600.webp');"></div>
+      <div class="hero-slide" style="background-image: image-set(url('/assets/images/webp/Somos_CONSTRUCCION_1600.webp') 1x, url('/assets/images/webp/Somos_CONSTRUCCION_3200.webp') 2x); background-image: url('/assets/images/webp/Somos_CONSTRUCCION_1600.webp');"></div>
     
     <div class="hero-content">
       <!-- Slide Content A -->
@@ -245,8 +245,21 @@
       <div class="projects-grid">
         <div class="project-card">
           <picture>
-            <source srcset="/assets/images/webp/Somos_INGENIERIA.webp" type="image/webp">
-            <img src="/assets/images/webp/Somos_INGENIERIA.webp" alt="Proyecto Industrial" class="project-image" width="369" height="280" loading="lazy">
+            <source
+              srcset="/assets/images/webp/Somos_INGENIERIA_370.webp 370w, /assets/images/webp/Somos_INGENIERIA_740.webp 740w"
+              sizes="(max-width: 600px) 90vw, 369px"
+              type="image/webp"
+            >
+            <img
+              src="/assets/images/webp/Somos_INGENIERIA_370.webp"
+              srcset="/assets/images/webp/Somos_INGENIERIA_370.webp 370w, /assets/images/webp/Somos_INGENIERIA_740.webp 740w"
+              sizes="(max-width: 600px) 90vw, 369px"
+              alt="Proyecto Industrial"
+              class="project-image"
+              width="369"
+              height="280"
+              loading="lazy"
+            >
           </picture>
           <div class="project-content">
             <span class="project-tag">Industrial</span>
@@ -267,8 +280,21 @@
         </div>
         <div class="project-card">
           <picture>
-            <source srcset="/assets/images/webp/Somos_CONSTRUCCION.webp" type="image/webp">
-            <img src="/assets/images/webp/Somos_CONSTRUCCION.webp" alt="Proyecto Comercial" class="project-image" width="369" height="280" loading="lazy">
+            <source
+              srcset="/assets/images/webp/Somos_CONSTRUCCION_370.webp 370w, /assets/images/webp/Somos_CONSTRUCCION_740.webp 740w"
+              sizes="(max-width: 600px) 90vw, 369px"
+              type="image/webp"
+            >
+            <img
+              src="/assets/images/webp/Somos_CONSTRUCCION_370.webp"
+              srcset="/assets/images/webp/Somos_CONSTRUCCION_370.webp 370w, /assets/images/webp/Somos_CONSTRUCCION_740.webp 740w"
+              sizes="(max-width: 600px) 90vw, 369px"
+              alt="Proyecto Comercial"
+              class="project-image"
+              width="369"
+              height="280"
+              loading="lazy"
+            >
           </picture>
           <div class="project-content">
             <span class="project-tag">Comercial</span>
@@ -289,8 +315,21 @@
         </div>
         <div class="project-card">
           <picture>
-            <source srcset="/assets/images/webp/Somos_DISEÑO_INTERIOR.webp" type="image/webp">
-            <img src="/assets/images/webp/Somos_DISEÑO_INTERIOR.webp" alt="Proyecto Corporativo" class="project-image" width="369" height="280" loading="lazy">
+            <source
+              srcset="/assets/images/webp/Somos_DISEÑO_INTERIOR_370.webp 370w, /assets/images/webp/Somos_DISEÑO_INTERIOR_740.webp 740w"
+              sizes="(max-width: 600px) 90vw, 369px"
+              type="image/webp"
+            >
+            <img
+              src="/assets/images/webp/Somos_DISEÑO_INTERIOR_370.webp"
+              srcset="/assets/images/webp/Somos_DISEÑO_INTERIOR_370.webp 370w, /assets/images/webp/Somos_DISEÑO_INTERIOR_740.webp 740w"
+              sizes="(max-width: 600px) 90vw, 369px"
+              alt="Proyecto Corporativo"
+              class="project-image"
+              width="369"
+              height="280"
+              loading="lazy"
+            >
           </picture>
           <div class="project-content">
             <span class="project-tag">Corporativo</span>

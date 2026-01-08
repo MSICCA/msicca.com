@@ -102,35 +102,23 @@
     <!-- Hero Section with Slideshow -->
     <section class="hero" id="home">
       <!-- Slide 1: Engineering -->
-      <div
-        class="hero-slide active"
-        style="background-image: url('/assets/images/webp/Somos_INGENIERIA.webp')"
-      ></div>
       <!-- Slide 2: Architecture -->
       <div
         class="hero-slide"
         style="background-image: url('/assets/images/webp/Somos_ARQUITECTURA.webp')"
       ></div>
       <!-- Slide 3: Construction -->
-      <div
-        class="hero-slide"
-        style="background-image: url('/assets/images/webp/Somos_CONSTRUCCION.webp')"
-      ></div>
       <!-- Slide 4: Engineering (Capabilities) -->
-      <div
-        class="hero-slide"
-        style="background-image: url('/assets/images/webp/Somos_INGENIERIA.webp')"
-      ></div>
       <!-- Slide 5: Construction (Deployments) -->
-      <div
-        class="hero-slide"
-        style="background-image: url('/assets/images/webp/Somos_CONSTRUCCION.webp')"
-      ></div>
       <!-- Slide 6: Architecture (Contact) -->
       <div
         class="hero-slide"
         style="background-image: url('/assets/images/webp/Somos_ARQUITECTURA.webp')"
       ></div>
+        <div class="hero-slide active" style="background-image: image-set(url('/assets/images/webp/Somos_INGENIERIA_1600.webp') 1x, url('/assets/images/webp/Somos_INGENIERIA_3200.webp') 2x); background-image: url('/assets/images/webp/Somos_INGENIERIA_1600.webp')"></div>
+        <div class="hero-slide" style="background-image: image-set(url('/assets/images/webp/Somos_CONSTRUCCION_1600.webp') 1x, url('/assets/images/webp/Somos_CONSTRUCCION_3200.webp') 2x); background-image: url('/assets/images/webp/Somos_CONSTRUCCION_1600.webp')"></div>
+        <div class="hero-slide" style="background-image: image-set(url('/assets/images/webp/Somos_INGENIERIA_1600.webp') 1x, url('/assets/images/webp/Somos_INGENIERIA_3200.webp') 2x); background-image: url('/assets/images/webp/Somos_INGENIERIA_1600.webp')"></div>
+        <div class="hero-slide" style="background-image: image-set(url('/assets/images/webp/Somos_CONSTRUCCION_1600.webp') 1x, url('/assets/images/webp/Somos_CONSTRUCCION_3200.webp') 2x); background-image: url('/assets/images/webp/Somos_CONSTRUCCION_1600.webp')"></div>
 
       <div class="hero-content">
         <!-- Slide Content A -->
@@ -452,9 +440,14 @@
         <div class="projects-grid">
           <div class="project-card">
             <img
-              src="/assets/images/webp/Somos_INGENIERIA.webp"
+              src="/assets/images/webp/Somos_INGENIERIA_370.webp"
+              srcset="/assets/images/webp/Somos_INGENIERIA_370.webp 370w, /assets/images/webp/Somos_INGENIERIA_740.webp 740w"
+              sizes="(max-width: 600px) 90vw, 369px"
               alt="Grid Stability Project"
               class="project-image"
+              width="369"
+              height="280"
+              loading="lazy"
             />
             <div class="project-content">
               <span class="project-tag">Industrial</span>
@@ -477,9 +470,14 @@
           </div>
           <div class="project-card">
             <img
-              src="/assets/images/webp/Somos_CONSTRUCCION.webp"
+              src="/assets/images/webp/Somos_CONSTRUCCION_370.webp"
+              srcset="/assets/images/webp/Somos_CONSTRUCCION_370.webp 370w, /assets/images/webp/Somos_CONSTRUCCION_740.webp 740w"
+              sizes="(max-width: 600px) 90vw, 369px"
               alt="Commercial Infrastructure"
               class="project-image"
+              width="369"
+              height="280"
+              loading="lazy"
             />
             <div class="project-content">
               <span class="project-tag">Commercial</span>
@@ -500,9 +498,14 @@
           </div>
           <div class="project-card">
             <img
-              src="/assets/images/webp/Somos_SUMINISTRO.webp"
+              src="/assets/images/webp/Somos_SUMINISTRO_370.webp"
+              srcset="/assets/images/webp/Somos_SUMINISTRO_370.webp 370w, /assets/images/webp/Somos_SUMINISTRO_740.webp 740w"
+              sizes="(max-width: 600px) 90vw, 369px"
               alt="Industrial Procurement"
               class="project-image"
+              width="369"
+              height="280"
+              loading="lazy"
             />
             <div class="project-content">
               <span class="project-tag">Logistics</span>

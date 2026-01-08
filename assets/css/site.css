@@ -776,6 +776,36 @@ form .btn-primary:hover {
 }
 
 /* Section Styles - Content container only */
+
+/* Light preview palette so text stays readable on bright backgrounds */
+.light-preview-mid.band--base {
+  background: #f7f8fb;
+}
+
+.light-preview-mid.band--soft {
+  background: linear-gradient(180deg, #eef1f7 0%, #e3e7ef 100%);
+  border-top: 1px solid rgba(15, 23, 42, 0.05);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.05);
+}
+
+.light-preview-mid .section {
+  color: #1f2937;
+}
+
+.light-preview-mid .section h2 {
+  color: #0f172a;
+}
+
+.light-preview-mid .section-description {
+  color: #475467;
+}
+
+.light-preview-mid .section-badge {
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  color: #92400e;
+}
+
 .section {
   padding: 6rem 2rem;
   max-width: 1400px;
