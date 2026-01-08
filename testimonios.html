@@ -35,17 +35,21 @@
 
     <!-- Google Fonts - Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preconnect"
+      href="https://ka-f.fontawesome.com"
+      crossorigin="anonymous"
+    />
+    <link rel="dns-prefetch" href="https://ka-f.fontawesome.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/d235c54e89.js"
-      crossorigin="anonymous"
-    ></script>
 
     <!-- Google Tag Manager -->
     <script>
@@ -99,9 +103,6 @@
     <!-- Shared Site Styles -->
     <link rel="stylesheet" href="/assets/css/site.css" />
 
-    <!-- ES Automatic Hybrid Theme (system light only) -->
-    <link rel="stylesheet" href="/assets/css/auto-theme-es.css" />
-
     <style>
       /* Page-specific styles if needed */
     </style>
@@ -124,7 +125,13 @@
     <!-- Page Hero -->
     <section
       class="page-hero"
-      style="background-image: url('/assets/images/Somos_DISEÑO_INTERIOR.jpg')"
+      style="
+        background-image: image-set(
+          url('/assets/images/webp/Somos_DISEÑO_INTERIOR.webp') 1x,
+          url('/assets/images/webp/Somos_DISEÑO_INTERIOR.webp') 2x
+        );
+        background-image: url('/assets/images/Somos_DISEÑO_INTERIOR.jpg');
+      "
     >
       <div class="page-hero-content">
         <h1>Testimonios</h1>
@@ -202,11 +209,20 @@
         </div>
         <div class="projects-grid">
           <div class="project-card">
-            <img
-              src="/assets/images/Somos_INGENIERIA.jpg"
-              alt="Proyecto Industrial"
-              class="project-image"
-            />
+            <picture>
+              <source
+                srcset="/assets/images/webp/Somos_INGENIERIA.webp"
+                type="image/webp"
+              />
+              <img
+                src="/assets/images/Somos_INGENIERIA.jpg"
+                alt="Proyecto Industrial"
+                class="project-image"
+                width="369"
+                height="280"
+                loading="lazy"
+              />
+            </picture>
             <div class="project-content">
               <span class="project-tag">Industrial</span>
               <h3>Modernización de Instalaciones Industriales</h3>
@@ -234,11 +250,20 @@
             </div>
           </div>
           <div class="project-card">
-            <img
-              src="/assets/images/Somos_CONSTRUCCION.jpg"
-              alt="Proyecto Comercial"
-              class="project-image"
-            />
+            <picture>
+              <source
+                srcset="/assets/images/webp/Somos_CONSTRUCCION.webp"
+                type="image/webp"
+              />
+              <img
+                src="/assets/images/Somos_CONSTRUCCION.jpg"
+                alt="Proyecto Comercial"
+                class="project-image"
+                width="369"
+                height="280"
+                loading="lazy"
+              />
+            </picture>
             <div class="project-content">
               <span class="project-tag">Comercial</span>
               <h3>Centro Comercial Zona Norte</h3>
@@ -266,11 +291,20 @@
             </div>
           </div>
           <div class="project-card">
-            <img
-              src="/assets/images/Somos_DISEÑO_INTERIOR.jpg"
-              alt="Proyecto Corporativo"
-              class="project-image"
-            />
+            <picture>
+              <source
+                srcset="/assets/images/webp/Somos_DISEÑO_INTERIOR.webp"
+                type="image/webp"
+              />
+              <img
+                src="/assets/images/Somos_DISEÑO_INTERIOR.jpg"
+                alt="Proyecto Corporativo"
+                class="project-image"
+                width="369"
+                height="280"
+                loading="lazy"
+              />
+            </picture>
             <div class="project-content">
               <span class="project-tag">Corporativo</span>
               <h3>Remodelación de Oficinas Corporativas</h3>

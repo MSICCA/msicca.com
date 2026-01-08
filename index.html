@@ -18,13 +18,16 @@
   <link rel="alternate" hreflang="x-default" href="https://msicca.com/">
   <link rel="canonical" href="https://msicca.com/">
 
-  <!-- Google Fonts - Inter -->
+  <!-- Google Fonts - Inter (non-blocking load) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/d235c54e89.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin="anonymous">
+  <link rel="dns-prefetch" href="https://ka-f.fontawesome.com">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+  </noscript>
 
   <!-- Google Tag Manager -->
   <script>
@@ -55,9 +58,6 @@
   <!-- Shared Site Styles -->
   <link rel="stylesheet" href="/assets/css/site.css">
 
-  <!-- ES Automatic Hybrid Theme (system light only) -->
-  <link rel="stylesheet" href="/assets/css/auto-theme-es.css">
-
   <style>
     /* Page-specific styles if needed */
   </style>
@@ -75,17 +75,17 @@
   <!-- Hero Section with Slideshow -->
   <section class="hero" id="inicio">
     <!-- Slide 1: INGENIERIA -->
-    <div class="hero-slide active" style="background-image: url('/assets/images/Somos_INGENIERIA.jpg');"></div>
+    <div class="hero-slide active" style="background-image: url('/assets/images/Somos_INGENIERIA.jpg'); background-image: image-set(url('/assets/images/webp/Somos_INGENIERIA.webp') 1x, url('/assets/images/webp/Somos_INGENIERIA.webp') 2x);"></div>
     <!-- Slide 2: ARQUITECTURA -->
-    <div class="hero-slide" style="background-image: url('/assets/images/Somos_ARQUITECTURA.jpg');"></div>
+    <div class="hero-slide" style="background-image: url('/assets/images/Somos_ARQUITECTURA.jpg'); background-image: image-set(url('/assets/images/webp/Somos_ARQUITECTURA.webp') 1x, url('/assets/images/webp/Somos_ARQUITECTURA.webp') 2x);"></div>
     <!-- Slide 3: CONSTRUCCION -->
-    <div class="hero-slide" style="background-image: url('/assets/images/Somos_CONSTRUCCION.jpg');"></div>
+    <div class="hero-slide" style="background-image: url('/assets/images/Somos_CONSTRUCCION.jpg'); background-image: image-set(url('/assets/images/webp/Somos_CONSTRUCCION.webp') 1x, url('/assets/images/webp/Somos_CONSTRUCCION.webp') 2x);"></div>
     <!-- Slide 4: SERVICIOS (from services page) -->
-    <div class="hero-slide" style="background-image: url('/assets/images/Somos_INGENIERIA.jpg');"></div>
+    <div class="hero-slide" style="background-image: url('/assets/images/Somos_INGENIERIA.jpg'); background-image: image-set(url('/assets/images/webp/Somos_INGENIERIA.webp') 1x, url('/assets/images/webp/Somos_INGENIERIA.webp') 2x);"></div>
     <!-- Slide 5: PROYECTOS (from projects page) -->
-    <div class="hero-slide" style="background-image: url('/assets/images/Somos_CONSTRUCCION.jpg');"></div>
+    <div class="hero-slide" style="background-image: url('/assets/images/Somos_CONSTRUCCION.jpg'); background-image: image-set(url('/assets/images/webp/Somos_CONSTRUCCION.webp') 1x, url('/assets/images/webp/Somos_CONSTRUCCION.webp') 2x);"></div>
     <!-- Slide 6: CONTACTO (from contact page) -->
-    <div class="hero-slide" style="background-image: url('/assets/images/Somos_ARQUITECTURA.jpg');"></div>
+    <div class="hero-slide" style="background-image: url('/assets/images/Somos_ARQUITECTURA.jpg'); background-image: image-set(url('/assets/images/webp/Somos_ARQUITECTURA.webp') 1x, url('/assets/images/webp/Somos_ARQUITECTURA.webp') 2x);"></div>
     
     <div class="hero-content">
       <!-- Slide Content A -->
@@ -252,7 +252,10 @@
       </div>
       <div class="projects-grid">
         <div class="project-card">
-          <img src="/assets/images/Somos_INGENIERIA.jpg" alt="Proyecto Industrial" class="project-image">
+          <picture>
+            <source srcset="/assets/images/webp/Somos_INGENIERIA.webp" type="image/webp">
+            <img src="/assets/images/Somos_INGENIERIA.jpg" alt="Proyecto Industrial" class="project-image" width="369" height="280" loading="lazy">
+          </picture>
           <div class="project-content">
             <span class="project-tag">Industrial</span>
             <h3>Modernización de Instalaciones Industriales</h3>
@@ -271,7 +274,10 @@
           </div>
         </div>
         <div class="project-card">
-          <img src="/assets/images/Somos_CONSTRUCCION.jpg" alt="Proyecto Comercial" class="project-image">
+          <picture>
+            <source srcset="/assets/images/webp/Somos_CONSTRUCCION.webp" type="image/webp">
+            <img src="/assets/images/Somos_CONSTRUCCION.jpg" alt="Proyecto Comercial" class="project-image" width="369" height="280" loading="lazy">
+          </picture>
           <div class="project-content">
             <span class="project-tag">Comercial</span>
             <h3>Centro Comercial Zona Norte</h3>
@@ -290,7 +296,10 @@
           </div>
         </div>
         <div class="project-card">
-          <img src="/assets/images/Somos_DISEÑO_INTERIOR.jpg" alt="Proyecto Corporativo" class="project-image">
+          <picture>
+            <source srcset="/assets/images/webp/Somos_DISEÑO_INTERIOR.webp" type="image/webp">
+            <img src="/assets/images/Somos_DISEÑO_INTERIOR.jpg" alt="Proyecto Corporativo" class="project-image" width="369" height="280" loading="lazy">
+          </picture>
           <div class="project-content">
             <span class="project-tag">Corporativo</span>
             <h3>Remodelación de Oficinas Corporativas</h3>

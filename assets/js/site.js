@@ -30,61 +30,78 @@
     const header = document.querySelector(".header");
     if (!header) return;
 
-    function updateHeader() {
-      if (window.scrollY > 10) {
-        header.classList.add("scrolled");
-      } else {
-        header.classList.remove("scrolled");
+    let lastKnownScrollY = window.scrollY;
+    let ticking = false;
+    let headerIsScrolled = header.classList.contains("scrolled");
+
+    function applyHeaderState() {
+      ticking = false;
+      const nextState = lastKnownScrollY > 10;
+      if (nextState === headerIsScrolled) return; // Avoid unnecessary DOM writes
+      headerIsScrolled = nextState;
+      header.classList.toggle("scrolled", headerIsScrolled);
+    }
+
+    function onScroll() {
+      lastKnownScrollY = window.scrollY;
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(applyHeaderState);
       }
     }
 
     // Initial check
-    updateHeader();
+    applyHeaderState();
 
-    // Listen to scroll events
-    window.addEventListener("scroll", updateHeader, { passive: true });
+    // Listen to scroll events (throttled via rAF to avoid repeated reflows)
+    window.addEventListener("scroll", onScroll, { passive: true });
   }
 
   // Hero slideshow functionality with content changes
   function initHeroSlideshow() {
-    const heroSlides = document.querySelectorAll(".hero-slide");
-    const slideContents = document.querySelectorAll(".slide-content");
+    const heroSlides = Array.from(document.querySelectorAll(".hero-slide"));
+    const slideContents = Array.from(
+      document.querySelectorAll(".slide-content")
+    );
 
     if (heroSlides.length <= 1) return; // No slideshow needed
 
-    let currentSlide = 0;
+    let currentSlideIndex = 0;
+    let activeSlide = heroSlides[0] || null;
+    let activeContent = slideContents[0] || null;
     const slideInterval = 5000; // 5 seconds per slide
 
-    function showSlide(index) {
-      // Hide all slides and content
-      heroSlides.forEach((slide, i) => {
-        slide.classList.remove("active");
-      });
+    // Ensure only the first slide is active on init
+    heroSlides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === 0);
+    });
+    slideContents.forEach((content, i) => {
+      content.classList.toggle("active", i === 0);
+    });
 
-      slideContents.forEach((content, i) => {
-        content.classList.remove("active");
-      });
+    function showSlide(nextIndex) {
+      const normalizedIndex = nextIndex % heroSlides.length;
+      if (normalizedIndex === currentSlideIndex) return; // Skip redundant state changes
 
-      // Show current slide and content
-      if (heroSlides[index]) {
-        heroSlides[index].classList.add("active");
-      }
+      if (activeSlide) activeSlide.classList.remove("active");
+      if (activeContent) activeContent.classList.remove("active");
 
-      if (slideContents[index]) {
-        slideContents[index].classList.add("active");
-      }
+      currentSlideIndex = normalizedIndex;
+      activeSlide = heroSlides[currentSlideIndex] || null;
+      activeContent = slideContents[currentSlideIndex] || null;
+
+      if (activeSlide) activeSlide.classList.add("active");
+      if (activeContent) activeContent.classList.add("active");
     }
 
     function nextSlide() {
-      currentSlide = (currentSlide + 1) % heroSlides.length;
-      showSlide(currentSlide);
+      showSlide(currentSlideIndex + 1);
     }
 
-    // Show first slide
-    showSlide(0);
-
-    // Auto-advance slides
-    setInterval(nextSlide, slideInterval);
+    // Auto-advance slides, schedule updates in rAF to avoid layout thrash
+    setInterval(() => {
+      requestAnimationFrame(nextSlide);
+    }, slideInterval);
   }
 
   // Smooth scroll for anchor links with offset for header
@@ -97,15 +114,7 @@
         const target = document.querySelector(href);
         if (target) {
           e.preventDefault();
-          const headerOffset = 80;
-          const elementPosition = target.getBoundingClientRect().top;
-          const offsetPosition =
-            elementPosition + window.pageYOffset - headerOffset;
-
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth",
-          });
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
         }
       });
     });
