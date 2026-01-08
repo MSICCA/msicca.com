@@ -34,6 +34,37 @@
     }
   }
 
+  // Lazy-load Google Tag Manager after idle or first interaction (production only)
+  function initAnalytics() {
+    const host = location.hostname || "";
+    const isProd =
+      /(^|\.)msicca\.com$/i.test(host) ||
+      /(^|\.)msicca-web\.netlify\.app$/i.test(host);
+    if (!isProd && !window.__ENABLE_GTM) return;
+
+    let loaded = false;
+    function loadGTM() {
+      if (loaded) return;
+      loaded = true;
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ "gtm.start": Date.now(), event: "gtm.js" });
+      const s = document.createElement("script");
+      s.async = true;
+      s.src = "https://www.googletagmanager.com/gtm.js?id=GTM-P8HPBXR5";
+      const ref =
+        document.getElementsByTagName("script")[0] || document.head.firstChild;
+      (ref?.parentNode || document.head).insertBefore(s, ref || null);
+    }
+
+    // Load when idle, or on first user interaction if earlier
+    scheduleIdle(loadGTM);
+    window.addEventListener("pointerdown", loadGTM, {
+      once: true,
+      passive: true,
+    });
+    window.addEventListener("keydown", loadGTM, { once: true });
+  }
+
   // Header scroll behavior - transparent to opaque
   function initHeaderScroll() {
     const header = document.querySelector(".header");
@@ -293,6 +324,7 @@
       initHeroSlideshow();
       initScrollAnimations();
       initPageTransitions();
+      initAnalytics();
     });
   }
 
