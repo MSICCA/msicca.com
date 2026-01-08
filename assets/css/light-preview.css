@@ -130,9 +130,17 @@ body.light-preview .light-preview-mid {
 body.light-preview .light-preview-mid input,
 body.light-preview .light-preview-mid textarea,
 body.light-preview .light-preview-mid select {
-  background: rgba(255, 255, 255, 0.9) !important;
+  background: #ffffff !important;
   color: #0f172a !important;
-  border-color: rgba(245, 158, 11, 0.28) !important;
+  border-color: #cbd5e1 !important;
+  box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.08);
+}
+
+body.light-preview .light-preview-mid select:focus,
+body.light-preview .light-preview-mid input:focus,
+body.light-preview .light-preview-mid textarea:focus {
+  outline: 2px solid rgba(245, 158, 11, 0.4);
+  outline-offset: 2px;
 }
 
 body.light-preview .light-preview-mid input::placeholder,
@@ -142,6 +150,7 @@ body.light-preview .light-preview-mid textarea::placeholder {
 
 body.light-preview .light-preview-mid select option {
   color: #0f172a;
+  background: #ffffff;
 }
 
 body.light-preview .light-preview-mid .story-card,
@@ -186,7 +195,7 @@ body.light-preview .light-preview-mid .team-hero-left p {
 
 body.light-preview .light-preview-mid .value-card {
   background: #ffffff;
-  border: 1px solid rgba(15, 23, 42, 0.10);
+  border: 1px solid rgba(15, 23, 42, 0.1);
   box-shadow: 0 12px 36px rgba(15, 23, 42, 0.06);
 }
 

@@ -1,0 +1,212 @@
+/*
+ * ES Automatic Hybrid Theme
+ * - Dark mode: unchanged (base styles)
+ * - Light mode (system): lightens ONLY sections marked with `.light-preview-mid`
+ * - NO toggle switch.
+ *
+ * English pages must remain always dark: do not include this stylesheet on /en pages.
+ */
+
+@media (prefers-color-scheme: light) {
+  html[lang^="es"] body.es-auto-theme .light-preview-mid.band--base {
+    background: #f7f8fb;
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid.band--soft {
+    background: linear-gradient(180deg, #eef1f7 0%, #e3e7ef 100%);
+    border-top: 1px solid rgba(15, 23, 42, 0.05);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.05);
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .section {
+    color: #1f2937;
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .section h2 {
+    color: #0f172a;
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .section-description {
+    color: #475467;
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .section-badge {
+    background: rgba(234, 179, 8, 0.15);
+    border: 1px solid rgba(234, 179, 8, 0.35);
+    color: #b45309;
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .glass-panel {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 10px 40px rgba(15, 23, 42, 0.08);
+    color: #111827;
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .glass-panel:hover {
+    border-color: #d1d5db;
+    box-shadow: 0 16px 48px rgba(15, 23, 42, 0.12);
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .service-card h3 {
+    color: #0f172a;
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .service-card p,
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .service-card ul,
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .service-card ul li {
+    color: #475467;
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .service-icon {
+    box-shadow: 0 8px 24px rgba(234, 179, 8, 0.25);
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .projects-grid {
+    gap: 2.25rem;
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .project-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 14px 50px rgba(15, 23, 42, 0.08);
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .project-tag {
+    background: #fff7ed;
+    border: 1px solid #fed7aa;
+    color: #c2410c;
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .project-card h3 {
+    color: #0f172a;
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .project-card p,
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .project-case p {
+    color: #475467;
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .project-case h4 {
+    color: #b45309;
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .clients-grid {
+    gap: 1.5rem;
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .client-logo {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 12px 36px rgba(15, 23, 42, 0.06);
+    padding: 1.5rem;
+    opacity: 0.9;
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .client-logo:hover {
+    opacity: 1;
+    box-shadow: 0 16px 48px rgba(30, 35, 48, 0.08);
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .client-logo img {
+    filter: none;
+    max-width: 220px;
+    max-height: 120px;
+  }
+
+  /* Nosotros / Contacto: remap tokens used by inline styles inside middle sections */
+  html[lang^="es"] body.es-auto-theme .light-preview-mid {
+    --color-surface: #ffffff;
+    --color-border: rgba(15, 23, 42, 0.12);
+    --color-title: #0f172a;
+    --color-text: #475467;
+    --shadow-xs: 0 12px 40px rgba(15, 23, 42, 0.08);
+    --shadow-sm: 0 12px 40px rgba(15, 23, 42, 0.08);
+
+    --color-white: #0f172a;
+    --color-zinc-300: #334155;
+    --color-zinc-400: #475467;
+  }
+
+  /* Contacto form: override inline dark inputs inside middle sections */
+  html[lang^="es"] body.es-auto-theme .light-preview-mid input,
+  html[lang^="es"] body.es-auto-theme .light-preview-mid textarea,
+  html[lang^="es"] body.es-auto-theme .light-preview-mid select {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    border-color: #cbd5e1 !important;
+    box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.08);
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid select:focus,
+  html[lang^="es"] body.es-auto-theme .light-preview-mid input:focus,
+  html[lang^="es"] body.es-auto-theme .light-preview-mid textarea:focus {
+    outline: 2px solid rgba(245, 158, 11, 0.4);
+    outline-offset: 2px;
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid input::placeholder,
+  html[lang^="es"] body.es-auto-theme .light-preview-mid textarea::placeholder {
+    color: #667085 !important;
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid select option {
+    color: #0f172a;
+    background: #ffffff;
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .story-card,
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .team-intro,
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .team-profile {
+    background: var(--color-surface);
+    border-color: var(--color-border);
+    box-shadow: var(--shadow-xs);
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .story-card h3,
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .team-meta h4 {
+    color: var(--color-title);
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .story-card p,
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .team-meta .bio {
+    color: var(--color-text);
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .team-meta .role {
+    color: #667085;
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .team-hero {
+    background: #ffffff;
+    color: #0f172a;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .team-hero-left {
+    background: linear-gradient(135deg, #f8fafc 0%, #eef2f6 55%);
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .team-hero-left h2 {
+    color: #0f172a;
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .team-hero-left p {
+    color: #475467;
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .value-card {
+    background: #ffffff;
+    border: 1px solid rgba(15, 23, 42, 0.1);
+    box-shadow: 0 12px 36px rgba(15, 23, 42, 0.06);
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .value-card h3 {
+    color: #0f172a;
+  }
+
+  html[lang^="es"] body.es-auto-theme .light-preview-mid .value-card p {
+    color: #475467;
+  }
+}
