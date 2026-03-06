@@ -31,7 +31,6 @@
   }
   .st-customizer-cta svg {
     display: block;
-    vertical-align: middle;
   }
   .st-customizer-cta *,
   .st-customizer-cta ::before,
@@ -299,7 +298,9 @@
     text-align: center;
   }
   .font-DM-sans {
-    font-family: DM Sans, sans-serif;
+    font-family:
+      DM Sans,
+      sans-serif;
   }
   .text-\[12px\] {
     font-size: 12px;
@@ -367,47 +368,72 @@
     opacity: 0.4;
   }
   .shadow-customize-btn {
-    --tw-shadow: -1px 0px 2px rgba(0, 0, 0, 0.06),
-      -1px 0px 3px rgba(0, 0, 0, 0.1);
-    --tw-shadow-colored: -1px 0px 2px var(--tw-shadow-color),
-      -1px 0px 3px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    --tw-shadow:
+      -1px 0px 2px rgba(0, 0, 0, 0.06), -1px 0px 3px rgba(0, 0, 0, 0.1);
+    --tw-shadow-colored:
+      -1px 0px 2px var(--tw-shadow-color), -1px 0px 3px var(--tw-shadow-color);
+    box-shadow:
+      var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+      var(--tw-shadow);
   }
   .shadow-sidebar {
-    --tw-shadow: -1px 0px 2px rgba(0, 0, 0, 0.06),
-      -1px 0px 3px rgba(0, 0, 0, 0.1);
-    --tw-shadow-colored: -1px 0px 2px var(--tw-shadow-color),
-      -1px 0px 3px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    --tw-shadow:
+      -1px 0px 2px rgba(0, 0, 0, 0.06), -1px 0px 3px rgba(0, 0, 0, 0.1);
+    --tw-shadow-colored:
+      -1px 0px 2px var(--tw-shadow-color), -1px 0px 3px var(--tw-shadow-color);
+    box-shadow:
+      var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+      var(--tw-shadow);
   }
   .shadow-templateName {
-    --tw-shadow: 0px 6px 8px -3px rgba(0, 0, 0, 0.05),
-      0px 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --tw-shadow-colored: 0px 6px 8px -3px var(--tw-shadow-color),
+    --tw-shadow:
+      0px 6px 8px -3px rgba(0, 0, 0, 0.05), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --tw-shadow-colored:
+      0px 6px 8px -3px var(--tw-shadow-color),
       0px 4px 6px -2px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    box-shadow:
+      var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+      var(--tw-shadow);
   }
   .shadow-typoTooltip {
-    --tw-shadow: 0px 4px 8px -2px rgb(9 30 66 / 25%),
-      0px 0px 1px rgb(9 30 66 / 31%);
-    --tw-shadow-colored: 0px 4px 8px -2px var(--tw-shadow-color),
+    --tw-shadow:
+      0px 4px 8px -2px rgb(9 30 66 / 25%), 0px 0px 1px rgb(9 30 66 / 31%);
+    --tw-shadow-colored:
+      0px 4px 8px -2px var(--tw-shadow-color),
       0px 0px 1px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    box-shadow:
+      var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+      var(--tw-shadow);
   }
   .transition {
-    transition-property: color, background-color, border-color,
-      text-decoration-color, fill, stroke, opacity, box-shadow, transform,
-      filter, -webkit-backdrop-filter;
-    transition-property: color, background-color, border-color,
-      text-decoration-color, fill, stroke, opacity, box-shadow, transform,
-      filter, backdrop-filter;
-    transition-property: color, background-color, border-color,
-      text-decoration-color, fill, stroke, opacity, box-shadow, transform,
-      filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-property:
+      color,
+      background-color,
+      border-color,
+      text-decoration-color,
+      fill,
+      stroke,
+      opacity,
+      box-shadow,
+      transform,
+      filter,
+      -webkit-backdrop-filter;
+    transition-property:
+      color, background-color, border-color, text-decoration-color, fill,
+      stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-property:
+      color,
+      background-color,
+      border-color,
+      text-decoration-color,
+      fill,
+      stroke,
+      opacity,
+      box-shadow,
+      transform,
+      filter,
+      backdrop-filter,
+      -webkit-backdrop-filter;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
   }
@@ -543,6 +569,7 @@
   }
   button {
     -webkit-appearance: button;
+    appearance: button;
     cursor: pointer;
   }
   .msicca-container {
@@ -1131,7 +1158,8 @@ h6,
   padding: 0;
   margin: 0;
 }
-.msicca-page-builder-template .entry-header.msicca-no-title.msicca-no-thumbnail {
+.msicca-page-builder-template
+  .entry-header.msicca-no-title.msicca-no-thumbnail {
   margin-top: 0;
 }
 .msicca-page-builder-template .entry-header.msicca-header-without-markup {
@@ -1406,7 +1434,10 @@ html body {
   }
 }
 .msicca-theme-transparent-header .msicca-builder-menu .main-header-menu,
-.msicca-theme-transparent-header .msicca-builder-menu .main-header-menu .menu-link,
+.msicca-theme-transparent-header
+  .msicca-builder-menu
+  .main-header-menu
+  .menu-link,
 .msicca-theme-transparent-header
   [CLASS*="msicca-builder-menu-"]
   .main-header-menu
@@ -1430,7 +1461,10 @@ html body {
   .main-header-menu
   .current-menu-item
   > .menu-link,
-.msicca-theme-transparent-header .main-header-menu .menu-item:hover > .menu-link,
+.msicca-theme-transparent-header
+  .main-header-menu
+  .menu-item:hover
+  > .menu-link,
 .msicca-theme-transparent-header
   .main-header-menu
   .current-menu-item
@@ -1449,7 +1483,10 @@ html body {
 }
 @media (max-width: 921px) {
   .msicca-theme-transparent-header .msicca-builder-menu .main-header-menu,
-  .msicca-theme-transparent-header .msicca-builder-menu .main-header-menu .menu-link,
+  .msicca-theme-transparent-header
+    .msicca-builder-menu
+    .main-header-menu
+    .menu-link,
   .msicca-theme-transparent-header
     [CLASS*="msicca-builder-menu-"]
     .main-header-menu
@@ -1473,7 +1510,10 @@ html body {
     .main-header-menu
     .current-menu-item
     > .menu-link,
-  .msicca-theme-transparent-header .main-header-menu .menu-item:hover > .menu-link,
+  .msicca-theme-transparent-header
+    .main-header-menu
+    .menu-item:hover
+    > .menu-link,
   .msicca-theme-transparent-header
     .main-header-menu
     .current-menu-item
@@ -2174,13 +2214,15 @@ body {
   --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
   --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
   --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
-  --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
-    6px 6px rgba(0, 0, 0, 1);
+  --wp--preset--shadow--outlined:
+    6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
   --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
 }
 body {
   margin: 0;
-  --wp--style--global--content-size: var(--wp--custom--msicca-content-width-size);
+  --wp--style--global--content-size: var(
+    --wp--custom--msicca-content-width-size
+  );
   --wp--style--global--wide-size: var(--wp--custom--msicca-wide-width-size);
 }
 body {
@@ -2333,19 +2375,13 @@ a:where(:not(.wp-element-button)) {
     min-height: 1px;
     display: flex;
   }
-  .msicca-column-gap-default
-    > .msicca-column
-    > .msicca-element-populated {
+  .msicca-column-gap-default > .msicca-column > .msicca-element-populated {
     padding: 10px;
   }
-  .msicca-column-gap-wider
-    > .msicca-column
-    > .msicca-element-populated {
+  .msicca-column-gap-wider > .msicca-column > .msicca-element-populated {
     padding: 30px;
   }
-  .msicca-inner-section
-    .msicca-column-gap-no
-    .msicca-element-populated {
+  .msicca-inner-section .msicca-column-gap-no .msicca-element-populated {
     padding: 0;
   }
   @media (min-width: 768px) {
@@ -2405,8 +2441,12 @@ a:where(:not(.wp-element-button)) {
     }
   }
   .msicca-element .msicca-widget-container {
-    transition: background 0.3s, border 0.3s, border-radius 0.3s,
-      box-shadow 0.3s, transform var(--e-transform-transition-duration, 0.4s);
+    transition:
+      background 0.3s,
+      border 0.3s,
+      border-radius 0.3s,
+      box-shadow 0.3s,
+      transform var(--e-transform-transition-duration, 0.4s);
   }
   .msicca-button {
     display: inline-block;
@@ -2543,8 +2583,7 @@ a:where(:not(.wp-element-button)) {
   .msicca-widget.msicca-align-right .msicca-icon-list-items {
     justify-content: flex-end;
   }
-  .msicca-widget:not(.msicca-align-right)
-    .msicca-icon-list-item:after {
+  .msicca-widget:not(.msicca-align-right) .msicca-icon-list-item:after {
     left: 0;
   }
   .msicca-widget:not(.msicca-align-left) .msicca-icon-list-item:after {
@@ -2565,8 +2604,7 @@ a:where(:not(.wp-element-button)) {
       .msicca-icon-list-item:after {
       left: 0;
     }
-    .msicca-widget:not(.msicca-laptop-align-left)
-      .msicca-icon-list-item:after {
+    .msicca-widget:not(.msicca-laptop-align-left) .msicca-icon-list-item:after {
       right: 0;
     }
   }
@@ -2585,8 +2623,7 @@ a:where(:not(.wp-element-button)) {
       .msicca-icon-list-item:after {
       left: 0;
     }
-    .msicca-widget:not(.msicca-tablet-align-left)
-      .msicca-icon-list-item:after {
+    .msicca-widget:not(.msicca-tablet-align-left) .msicca-icon-list-item:after {
       right: 0;
     }
   }
@@ -2610,8 +2647,7 @@ a:where(:not(.wp-element-button)) {
       .msicca-icon-list-item:after {
       left: 0;
     }
-    .msicca-widget:not(.msicca-mobile-align-left)
-      .msicca-icon-list-item:after {
+    .msicca-widget:not(.msicca-mobile-align-left) .msicca-icon-list-item:after {
       right: 0;
     }
   }
@@ -2703,9 +2739,7 @@ a:where(:not(.wp-element-button)) {
 }
 /*! CSS Used from: https://websitedemos.net/wordpress-agency-04/wp-content/uploads/sites/98/msicca/css/post-6.css?ver=1691728273 ; media=all */
 @media all {
-  .msicca-6
-    .msicca-element.msicca-element-znbzfk8
-    > .msicca-container {
+  .msicca-6 .msicca-element.msicca-element-znbzfk8 > .msicca-container {
     min-height: 100vh;
   }
   .msicca-6
@@ -2730,10 +2764,16 @@ a:where(:not(.wp-element-button)) {
     > .msicca-background-overlay {
     background-color: var(--e-global-color-astglobalcolor5);
     opacity: 0.7;
-    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    transition:
+      background 0.3s,
+      border-radius 0.3s,
+      opacity 0.3s;
   }
   .msicca-6 .msicca-element.msicca-element-znbzfk8 {
-    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+    transition:
+      background 0.3s,
+      border 0.3s,
+      border-radius 0.3s,
       box-shadow 0.3s;
   }
   .msicca-6
@@ -2755,9 +2795,7 @@ a:where(:not(.wp-element-button)) {
     --divider-color: var(--e-global-color-astglobalcolor0);
     --divider-border-width: 6px;
   }
-  .msicca-6
-    .msicca-element.msicca-element-bezypx8
-    .msicca-divider-separator {
+  .msicca-6 .msicca-element.msicca-element-bezypx8 .msicca-divider-separator {
     width: 100px;
     margin: 0 auto;
     margin-left: 0;
@@ -2773,9 +2811,7 @@ a:where(:not(.wp-element-button)) {
   .msicca-6 .msicca-element.msicca-element-t2e9e3v .msicca-button {
     border-style: solid;
   }
-  .msicca-6
-    .msicca-element.msicca-element-t2e9e3v
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-t2e9e3v > .msicca-widget-container {
     margin: 40px 0 0;
     padding: 0;
   }
@@ -2784,18 +2820,14 @@ a:where(:not(.wp-element-button)) {
     --divider-color: var(--e-global-color-astglobalcolor0);
     --divider-border-width: 0.5px;
   }
-  .msicca-6
-    .msicca-element.msicca-element-a3a0dd8
-    .msicca-divider-separator {
+  .msicca-6 .msicca-element.msicca-element-a3a0dd8 .msicca-divider-separator {
     width: 100%;
   }
   .msicca-6 .msicca-element.msicca-element-a3a0dd8 .msicca-divider {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .msicca-6
-    .msicca-element.msicca-element-a3a0dd8
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-a3a0dd8 > .msicca-widget-container {
     margin: 100px 0 0;
   }
   .msicca-6
@@ -2810,10 +2842,7 @@ a:where(:not(.wp-element-button)) {
     margin-top: 0;
     margin-bottom: 20px;
   }
-  .msicca-6
-    .msicca-element.msicca-element-d273eda
-    .msicca-icon-list-icon
-    i {
+  .msicca-6 .msicca-element.msicca-element-d273eda .msicca-icon-list-icon i {
     color: var(--e-global-color-astglobalcolor0);
     transition: color 0.3s;
   }
@@ -2821,20 +2850,13 @@ a:where(:not(.wp-element-button)) {
     --e-icon-list-icon-size: 18px;
     --icon-vertical-offset: 0px;
   }
-  .msicca-6
-    .msicca-element.msicca-element-d273eda
-    .msicca-icon-list-icon {
+  .msicca-6 .msicca-element.msicca-element-d273eda .msicca-icon-list-icon {
     padding-right: 12px;
   }
-  .msicca-6
-    .msicca-element.msicca-element-d273eda
-    .msicca-icon-list-text {
+  .msicca-6 .msicca-element.msicca-element-d273eda .msicca-icon-list-text {
     transition: color 0.3s;
   }
-  .msicca-6
-    .msicca-element.msicca-element-cc5b50d
-    .msicca-icon-list-icon
-    i {
+  .msicca-6 .msicca-element.msicca-element-cc5b50d .msicca-icon-list-icon i {
     color: var(--e-global-color-astglobalcolor0);
     transition: color 0.3s;
   }
@@ -2842,20 +2864,13 @@ a:where(:not(.wp-element-button)) {
     --e-icon-list-icon-size: 18px;
     --icon-vertical-offset: 0px;
   }
-  .msicca-6
-    .msicca-element.msicca-element-cc5b50d
-    .msicca-icon-list-icon {
+  .msicca-6 .msicca-element.msicca-element-cc5b50d .msicca-icon-list-icon {
     padding-right: 12px;
   }
-  .msicca-6
-    .msicca-element.msicca-element-cc5b50d
-    .msicca-icon-list-text {
+  .msicca-6 .msicca-element.msicca-element-cc5b50d .msicca-icon-list-text {
     transition: color 0.3s;
   }
-  .msicca-6
-    .msicca-element.msicca-element-fa07641
-    .msicca-icon-list-icon
-    i {
+  .msicca-6 .msicca-element.msicca-element-fa07641 .msicca-icon-list-icon i {
     color: var(--e-global-color-astglobalcolor0);
     transition: color 0.3s;
   }
@@ -2863,14 +2878,10 @@ a:where(:not(.wp-element-button)) {
     --e-icon-list-icon-size: 18px;
     --icon-vertical-offset: 0px;
   }
-  .msicca-6
-    .msicca-element.msicca-element-fa07641
-    .msicca-icon-list-icon {
+  .msicca-6 .msicca-element.msicca-element-fa07641 .msicca-icon-list-icon {
     padding-right: 12px;
   }
-  .msicca-6
-    .msicca-element.msicca-element-fa07641
-    .msicca-icon-list-text {
+  .msicca-6 .msicca-element.msicca-element-fa07641 .msicca-icon-list-text {
     transition: color 0.3s;
   }
   .msicca-6
@@ -2880,7 +2891,10 @@ a:where(:not(.wp-element-button)) {
     background-color: var(--e-global-color-astglobalcolor5);
   }
   .msicca-6 .msicca-element.msicca-element-53f9krf {
-    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+    transition:
+      background 0.3s,
+      border 0.3s,
+      border-radius 0.3s,
       box-shadow 0.3s;
     padding: 100px 0;
   }
@@ -2889,9 +2903,7 @@ a:where(:not(.wp-element-button)) {
     --divider-color: var(--e-global-color-astglobalcolor0);
     --divider-border-width: 6px;
   }
-  .msicca-6
-    .msicca-element.msicca-element-zdli3a2
-    .msicca-divider-separator {
+  .msicca-6 .msicca-element.msicca-element-zdli3a2 .msicca-divider-separator {
     width: 100px;
     margin: 0 auto;
     margin-left: 0;
@@ -2920,7 +2932,10 @@ a:where(:not(.wp-element-button)) {
     background-color: var(--e-global-color-astglobalcolor4);
   }
   .msicca-6 .msicca-element.msicca-element-97a6dcb {
-    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+    transition:
+      background 0.3s,
+      border 0.3s,
+      border-radius 0.3s,
       box-shadow 0.3s;
     padding: 100px 0 150px;
   }
@@ -2932,12 +2947,10 @@ a:where(:not(.wp-element-button)) {
     --divider-color: rgba(255, 255, 255, 0.22);
     --divider-border-width: 40px;
   }
-  .msicca-6
-    .msicca-element.msicca-element-95ab0e7
-    .msicca-divider-separator {
+  .msicca-6 .msicca-element.msicca-element-95ab0e7 .msicca-divider-separator {
     width: 5px;
     margin: 0 auto;
-    margin-center: 0;
+    margin-inline: 0;
   }
   .msicca-6 .msicca-element.msicca-element-95ab0e7 .msicca-divider {
     text-align: center;
@@ -2951,49 +2964,34 @@ a:where(:not(.wp-element-button)) {
     margin-top: 80px;
     margin-bottom: 0;
   }
-  .msicca-6
-    .msicca-element.msicca-element-f349d4b
-    .msicca-icon-list-icon
-    i {
+  .msicca-6 .msicca-element.msicca-element-f349d4b .msicca-icon-list-icon i {
     transition: color 0.3s;
   }
   .msicca-6 .msicca-element.msicca-element-f349d4b {
     --e-icon-list-icon-size: 14px;
     --icon-vertical-offset: 0px;
   }
-  .msicca-6
-    .msicca-element.msicca-element-f349d4b
-    .msicca-icon-list-text {
+  .msicca-6 .msicca-element.msicca-element-f349d4b .msicca-icon-list-text {
     transition: color 0.3s;
   }
-  .msicca-6
-    .msicca-element.msicca-element-ab64149
-    .msicca-icon-list-icon
-    i {
+  .msicca-6 .msicca-element.msicca-element-ab64149 .msicca-icon-list-icon i {
     transition: color 0.3s;
   }
   .msicca-6 .msicca-element.msicca-element-ab64149 {
     --e-icon-list-icon-size: 14px;
     --icon-vertical-offset: 0px;
   }
-  .msicca-6
-    .msicca-element.msicca-element-ab64149
-    .msicca-icon-list-text {
+  .msicca-6 .msicca-element.msicca-element-ab64149 .msicca-icon-list-text {
     transition: color 0.3s;
   }
-  .msicca-6
-    .msicca-element.msicca-element-baba591
-    .msicca-icon-list-icon
-    i {
+  .msicca-6 .msicca-element.msicca-element-baba591 .msicca-icon-list-icon i {
     transition: color 0.3s;
   }
   .msicca-6 .msicca-element.msicca-element-baba591 {
     --e-icon-list-icon-size: 14px;
     --icon-vertical-offset: 0px;
   }
-  .msicca-6
-    .msicca-element.msicca-element-baba591
-    .msicca-icon-list-text {
+  .msicca-6 .msicca-element.msicca-element-baba591 .msicca-icon-list-text {
     transition: color 0.3s;
   }
   .msicca-6
@@ -3003,7 +3001,10 @@ a:where(:not(.wp-element-button)) {
     background-color: var(--e-global-color-astglobalcolor4);
   }
   .msicca-6 .msicca-element.msicca-element-o01erpd {
-    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+    transition:
+      background 0.3s,
+      border 0.3s,
+      border-radius 0.3s,
       box-shadow 0.3s;
     padding: 0 0 100px;
   }
@@ -3018,9 +3019,7 @@ a:where(:not(.wp-element-button)) {
     --divider-color: var(--e-global-color-astglobalcolor0);
     --divider-border-width: 6px;
   }
-  .msicca-6
-    .msicca-element.msicca-element-cnzvpqf
-    .msicca-divider-separator {
+  .msicca-6 .msicca-element.msicca-element-cnzvpqf .msicca-divider-separator {
     width: 100px;
     margin: 0 auto;
     margin-left: 0;
@@ -3046,9 +3045,7 @@ a:where(:not(.wp-element-button)) {
   .msicca-6 .msicca-element.msicca-element-7tb2vv9 img {
     box-shadow: 0 35px 100px 7px rgba(0, 0, 0, 0.5);
   }
-  .msicca-6
-    .msicca-element.msicca-element-7tb2vv9
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-7tb2vv9 > .msicca-widget-container {
     margin: -100px 50px 0 0;
     padding: 0;
   }
@@ -3060,9 +3057,7 @@ a:where(:not(.wp-element-button)) {
     width: 150%;
     box-shadow: 0 35px 100px 7px rgba(0, 0, 0, 0.5);
   }
-  .msicca-6
-    .msicca-element.msicca-element-a4djqul
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-a4djqul > .msicca-widget-container {
     margin: -50px 0 0;
     padding: 0;
   }
@@ -3073,18 +3068,14 @@ a:where(:not(.wp-element-button)) {
   .msicca-6 .msicca-element.msicca-element-vj0t2a8 img {
     box-shadow: 0 35px 100px 7px rgba(0, 0, 0, 0.5);
   }
-  .msicca-6
-    .msicca-element.msicca-element-vj0t2a8
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-vj0t2a8 > .msicca-widget-container {
     margin: -70px 0 0;
     padding: 0;
   }
   .msicca-6 .msicca-element.msicca-element-57tx5xg img {
     box-shadow: 0 0 100px 7px rgba(0, 0, 0, 0.5);
   }
-  .msicca-6
-    .msicca-element.msicca-element-57tx5xg
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-57tx5xg > .msicca-widget-container {
     margin: -160px 0 0;
     padding: 0;
   }
@@ -3093,29 +3084,23 @@ a:where(:not(.wp-element-button)) {
     --divider-color: #ffffff38;
     --divider-border-width: 40px;
   }
-  .msicca-6
-    .msicca-element.msicca-element-3csxtuu
-    .msicca-divider-separator {
+  .msicca-6 .msicca-element.msicca-element-3csxtuu .msicca-divider-separator {
     width: 5px;
     margin: 0 auto;
-    margin-center: 0;
+    margin-inline: 0;
   }
   .msicca-6 .msicca-element.msicca-element-3csxtuu .msicca-divider {
     text-align: center;
     padding-top: 25px;
     padding-bottom: 25px;
   }
-  .msicca-6
-    .msicca-element.msicca-element-3csxtuu
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-3csxtuu > .msicca-widget-container {
     margin: 50px 0 0;
   }
   .msicca-6 .msicca-element.msicca-element-3859f6b .msicca-button {
     border-style: solid;
   }
-  .msicca-6
-    .msicca-element.msicca-element-3859f6b
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-3859f6b > .msicca-widget-container {
     margin: 0;
     padding: 0;
   }
@@ -3126,7 +3111,10 @@ a:where(:not(.wp-element-button)) {
     background-color: var(--e-global-color-astglobalcolor4);
   }
   .msicca-6 .msicca-element.msicca-element-s1zkqjl {
-    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+    transition:
+      background 0.3s,
+      border 0.3s,
+      border-radius 0.3s,
       box-shadow 0.3s;
     padding: 100px 0;
   }
@@ -3138,12 +3126,10 @@ a:where(:not(.wp-element-button)) {
     --divider-color: #ffffff38;
     --divider-border-width: 40px;
   }
-  .msicca-6
-    .msicca-element.msicca-element-lkilgkw
-    .msicca-divider-separator {
+  .msicca-6 .msicca-element.msicca-element-lkilgkw .msicca-divider-separator {
     width: 5px;
     margin: 0 auto;
-    margin-center: 0;
+    margin-inline: 0;
   }
   .msicca-6 .msicca-element.msicca-element-lkilgkw .msicca-divider {
     text-align: center;
@@ -3162,9 +3148,7 @@ a:where(:not(.wp-element-button)) {
     .msicca-widget-container {
     background-color: rgba(48, 48, 48, 0.28);
   }
-  .msicca-6
-    .msicca-element.msicca-element-wbbwi4u
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-wbbwi4u > .msicca-widget-container {
     transition: background 0.1s;
   }
   .msicca-6
@@ -3172,9 +3156,7 @@ a:where(:not(.wp-element-button)) {
     .msicca-widget-container {
     background-color: rgba(48, 48, 48, 0.28);
   }
-  .msicca-6
-    .msicca-element.msicca-element-ulxihcm
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-ulxihcm > .msicca-widget-container {
     transition: background 0.1s;
   }
   .msicca-6
@@ -3182,9 +3164,7 @@ a:where(:not(.wp-element-button)) {
     .msicca-widget-container {
     background-color: rgba(48, 48, 48, 0.28);
   }
-  .msicca-6
-    .msicca-element.msicca-element-fe1gs10
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-fe1gs10 > .msicca-widget-container {
     transition: background 0.1s;
   }
   .msicca-6
@@ -3192,9 +3172,7 @@ a:where(:not(.wp-element-button)) {
     .msicca-widget-container {
     background-color: rgba(48, 48, 48, 0.28);
   }
-  .msicca-6
-    .msicca-element.msicca-element-sogryqr
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-sogryqr > .msicca-widget-container {
     transition: background 0.1s;
   }
   .msicca-6
@@ -3202,9 +3180,7 @@ a:where(:not(.wp-element-button)) {
     .msicca-widget-container {
     background-color: rgba(48, 48, 48, 0.28);
   }
-  .msicca-6
-    .msicca-element.msicca-element-f3ace07
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-f3ace07 > .msicca-widget-container {
     transition: background 0.1s;
   }
   .msicca-6
@@ -3212,9 +3188,7 @@ a:where(:not(.wp-element-button)) {
     .msicca-widget-container {
     background-color: rgba(48, 48, 48, 0.28);
   }
-  .msicca-6
-    .msicca-element.msicca-element-a52662e
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-a52662e > .msicca-widget-container {
     transition: background 0.1s;
   }
   .msicca-6
@@ -3222,9 +3196,7 @@ a:where(:not(.wp-element-button)) {
     .msicca-widget-container {
     background-color: rgba(48, 48, 48, 0.28);
   }
-  .msicca-6
-    .msicca-element.msicca-element-cc0c681
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-cc0c681 > .msicca-widget-container {
     transition: background 0.1s;
   }
   .msicca-6
@@ -3232,9 +3204,7 @@ a:where(:not(.wp-element-button)) {
     .msicca-widget-container {
     background-color: rgba(48, 48, 48, 0.28);
   }
-  .msicca-6
-    .msicca-element.msicca-element-bd0fa87
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-bd0fa87 > .msicca-widget-container {
     transition: background 0.1s;
   }
   .msicca-6 .msicca-element.msicca-element-3aobgu0 {
@@ -3242,12 +3212,10 @@ a:where(:not(.wp-element-button)) {
     --divider-color: rgba(255, 255, 255, 0.22);
     --divider-border-width: 40px;
   }
-  .msicca-6
-    .msicca-element.msicca-element-3aobgu0
-    .msicca-divider-separator {
+  .msicca-6 .msicca-element.msicca-element-3aobgu0 .msicca-divider-separator {
     width: 5px;
     margin: 0 auto;
-    margin-center: 0;
+    margin-inline: 0;
   }
   .msicca-6 .msicca-element.msicca-element-3aobgu0 .msicca-divider {
     text-align: center;
@@ -3257,9 +3225,7 @@ a:where(:not(.wp-element-button)) {
   .msicca-6 .msicca-element.msicca-element-axrax62 .msicca-button {
     border-style: solid;
   }
-  .msicca-6
-    .msicca-element.msicca-element-axrax62
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-axrax62 > .msicca-widget-container {
     margin: 0;
     padding: 0;
   }
@@ -3270,7 +3236,10 @@ a:where(:not(.wp-element-button)) {
     background-color: var(--e-global-color-astglobalcolor4);
   }
   .msicca-6 .msicca-element.msicca-element-3pr0u08 {
-    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+    transition:
+      background 0.3s,
+      border 0.3s,
+      border-radius 0.3s,
       box-shadow 0.3s;
     padding: 150px 0 0;
   }
@@ -3279,9 +3248,7 @@ a:where(:not(.wp-element-button)) {
     --divider-color: var(--e-global-color-astglobalcolor0);
     --divider-border-width: 6px;
   }
-  .msicca-6
-    .msicca-element.msicca-element-wlbepzb
-    .msicca-divider-separator {
+  .msicca-6 .msicca-element.msicca-element-wlbepzb .msicca-divider-separator {
     width: 100px;
     margin: 0 auto;
     margin-left: 0;
@@ -3294,9 +3261,7 @@ a:where(:not(.wp-element-button)) {
   .msicca-6 .msicca-element.msicca-element-9ccqysx {
     text-align: left;
   }
-  .msicca-6
-    .msicca-element.msicca-element-79hwwph
-    > .msicca-element-populated {
+  .msicca-6 .msicca-element.msicca-element-79hwwph > .msicca-element-populated {
     margin: 0;
     --e-column-margin-right: 0px;
     --e-column-margin-left: 0px;
@@ -3312,12 +3277,13 @@ a:where(:not(.wp-element-button)) {
     background-color: var(--e-global-color-astglobalcolor4);
   }
   .msicca-6 .msicca-element.msicca-element-xdvjmzi {
-    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+    transition:
+      background 0.3s,
+      border 0.3s,
+      border-radius 0.3s,
       box-shadow 0.3s;
   }
-  .msicca-6
-    .msicca-element.msicca-element-u9t408r
-    > .msicca-element-populated {
+  .msicca-6 .msicca-element.msicca-element-u9t408r > .msicca-element-populated {
     margin: -60px 0 60px;
     --e-column-margin-right: 0px;
     --e-column-margin-left: 0px;
@@ -3326,14 +3292,10 @@ a:where(:not(.wp-element-button)) {
   .msicca-6 .msicca-element.msicca-element-5pkwcq7 {
     text-align: center;
   }
-  .msicca-6
-    .msicca-element.msicca-element-5pkwcq7
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-5pkwcq7 > .msicca-widget-container {
     margin: 0 0 0 -60px;
   }
-  .msicca-6
-    .msicca-element.msicca-element-lx173h0
-    > .msicca-element-populated {
+  .msicca-6 .msicca-element.msicca-element-lx173h0 > .msicca-element-populated {
     margin: 70px 100px 0 65px;
     --e-column-margin-right: 100px;
     --e-column-margin-left: 65px;
@@ -3345,24 +3307,18 @@ a:where(:not(.wp-element-button)) {
   .msicca-6 .msicca-element.msicca-element-j7i6s4c {
     text-align: left;
   }
-  .msicca-6
-    .msicca-element.msicca-element-j7i6s4c
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-j7i6s4c > .msicca-widget-container {
     margin: -10px 0 0;
     padding: 0;
   }
-  .msicca-6
-    .msicca-element.msicca-element-zri23a1
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-zri23a1 > .msicca-widget-container {
     margin: 0;
     padding: 15px 0 50px;
   }
   .msicca-6 .msicca-element.msicca-element-3esp66q .msicca-button {
     border-style: solid;
   }
-  .msicca-6
-    .msicca-element.msicca-element-3esp66q
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-3esp66q > .msicca-widget-container {
     margin: 0;
     padding: 0;
   }
@@ -3373,15 +3329,16 @@ a:where(:not(.wp-element-button)) {
     background-color: var(--e-global-color-astglobalcolor4);
   }
   .msicca-6 .msicca-element.msicca-element-303qwxm {
-    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+    transition:
+      background 0.3s,
+      border 0.3s,
+      border-radius 0.3s,
       box-shadow 0.3s;
     margin-top: 120px;
     margin-bottom: 0;
     padding: 0;
   }
-  .msicca-6
-    .msicca-element.msicca-element-4upci8a
-    > .msicca-element-populated {
+  .msicca-6 .msicca-element.msicca-element-4upci8a > .msicca-element-populated {
     margin: 70px 100px 0 65px;
     --e-column-margin-right: 100px;
     --e-column-margin-left: 65px;
@@ -3393,38 +3350,28 @@ a:where(:not(.wp-element-button)) {
   .msicca-6 .msicca-element.msicca-element-qc3phhs {
     text-align: left;
   }
-  .msicca-6
-    .msicca-element.msicca-element-qc3phhs
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-qc3phhs > .msicca-widget-container {
     margin: -10px 0 0;
     padding: 0;
   }
-  .msicca-6
-    .msicca-element.msicca-element-stagbav
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-stagbav > .msicca-widget-container {
     margin: 0;
     padding: 15px 0 50px;
   }
   .msicca-6 .msicca-element.msicca-element-a569ec9 .msicca-button {
     border-style: solid;
   }
-  .msicca-6
-    .msicca-element.msicca-element-a569ec9
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-a569ec9 > .msicca-widget-container {
     margin: 0;
     padding: 0;
   }
-  .msicca-6
-    .msicca-element.msicca-element-gflv34v
-    > .msicca-element-populated {
+  .msicca-6 .msicca-element.msicca-element-gflv34v > .msicca-element-populated {
     margin: -60px 0 60px;
     --e-column-margin-right: 0px;
     --e-column-margin-left: 0px;
     padding: 0;
   }
-  .msicca-6
-    .msicca-element.msicca-element-8yvne0u
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-8yvne0u > .msicca-widget-container {
     margin: 0 -60px 0 0;
   }
   .msicca-6
@@ -3434,7 +3381,10 @@ a:where(:not(.wp-element-button)) {
     background-color: var(--e-global-color-astglobalcolor5);
   }
   .msicca-6 .msicca-element.msicca-element-9e16640 {
-    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+    transition:
+      background 0.3s,
+      border 0.3s,
+      border-radius 0.3s,
       box-shadow 0.3s;
     padding: 100px 0;
   }
@@ -3443,16 +3393,12 @@ a:where(:not(.wp-element-button)) {
     --divider-color: rgba(255, 255, 255, 0.22);
     --divider-border-width: 40px;
   }
-  .msicca-6
-    .msicca-element.msicca-element-43307af2
-    .msicca-divider-separator {
+  .msicca-6 .msicca-element.msicca-element-43307af2 .msicca-divider-separator {
     width: 5px;
     margin: 0 auto;
-    margin-center: 0;
+    margin-inline: 0;
   }
-  .msicca-6
-    .msicca-element.msicca-element-43307af2
-    .msicca-divider {
+  .msicca-6 .msicca-element.msicca-element-43307af2 .msicca-divider {
     text-align: center;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -3463,9 +3409,7 @@ a:where(:not(.wp-element-button)) {
   .msicca-6 .msicca-element.msicca-element-97abc4e .msicca-button {
     border-style: solid;
   }
-  .msicca-6
-    .msicca-element.msicca-element-97abc4e
-    > .msicca-widget-container {
+  .msicca-6 .msicca-element.msicca-element-97abc4e > .msicca-widget-container {
     margin: 50px 0 0;
     padding: 0;
   }
@@ -3499,9 +3443,7 @@ a:where(:not(.wp-element-button)) {
     }
   }
   @media (max-width: 1024px) {
-    .msicca-6
-      .msicca-element.msicca-element-znbzfk8
-      > .msicca-container {
+    .msicca-6 .msicca-element.msicca-element-znbzfk8 > .msicca-container {
       min-height: 500px;
     }
     .msicca-6 .msicca-element.msicca-element-znbzfk8 {
@@ -3639,9 +3581,7 @@ a:where(:not(.wp-element-button)) {
       > .msicca-element-populated {
       padding: 10px;
     }
-    .msicca-6
-      .msicca-element.msicca-element-bezypx8
-      .msicca-divider-separator {
+    .msicca-6 .msicca-element.msicca-element-bezypx8 .msicca-divider-separator {
       width: 20%;
     }
     .msicca-6
@@ -3655,9 +3595,7 @@ a:where(:not(.wp-element-button)) {
     .msicca-6 .msicca-element.msicca-element-53f9krf {
       padding: 10px;
     }
-    .msicca-6
-      .msicca-element.msicca-element-zdli3a2
-      .msicca-divider-separator {
+    .msicca-6 .msicca-element.msicca-element-zdli3a2 .msicca-divider-separator {
       width: 20%;
     }
     .msicca-6
@@ -3677,16 +3615,12 @@ a:where(:not(.wp-element-button)) {
       --e-column-margin-left: 0px;
       padding: 0;
     }
-    .msicca-6
-      .msicca-element.msicca-element-cnzvpqf
-      .msicca-divider-separator {
+    .msicca-6 .msicca-element.msicca-element-cnzvpqf .msicca-divider-separator {
       width: 20%;
       margin: 0 auto;
-      margin-center: 0;
+      margin-inline: 0;
     }
-    .msicca-6
-      .msicca-element.msicca-element-cnzvpqf
-      .msicca-divider {
+    .msicca-6 .msicca-element.msicca-element-cnzvpqf .msicca-divider {
       text-align: center;
     }
     .msicca-6 .msicca-element.msicca-element-ut3aovq {
@@ -3814,9 +3748,7 @@ a:where(:not(.wp-element-button)) {
     .msicca-6 .msicca-element.msicca-element-bd0fa87 img {
       max-width: 100%;
     }
-    .msicca-6
-      .msicca-element.msicca-element-wlbepzb
-      .msicca-divider-separator {
+    .msicca-6 .msicca-element.msicca-element-wlbepzb .msicca-divider-separator {
       width: 20%;
     }
     .msicca-6
@@ -3972,8 +3904,9 @@ a:where(:not(.wp-element-button)) {
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu6-K6h9Q.woff2)
     format("woff2");
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
-    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  unicode-range:
+    U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
   font-family: "DM Sans";
@@ -3981,9 +3914,10 @@ a:where(:not(.wp-element-button)) {
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2)
     format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "DM Sans";
@@ -3991,8 +3925,9 @@ a:where(:not(.wp-element-button)) {
   font-weight: 500;
   src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu6-K6h9Q.woff2)
     format("woff2");
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
-    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  unicode-range:
+    U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
   font-family: "DM Sans";
@@ -4000,9 +3935,10 @@ a:where(:not(.wp-element-button)) {
   font-weight: 500;
   src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2)
     format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "DM Sans";
@@ -4010,8 +3946,9 @@ a:where(:not(.wp-element-button)) {
   font-weight: 700;
   src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu6-K6h9Q.woff2)
     format("woff2");
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
-    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  unicode-range:
+    U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
   font-family: "DM Sans";
@@ -4019,9 +3956,10 @@ a:where(:not(.wp-element-button)) {
   font-weight: 700;
   src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2)
     format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Poppins";
@@ -4030,8 +3968,9 @@ a:where(:not(.wp-element-button)) {
   font-display: fallback;
   src: url(https://websitedemos.net/fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecmNE.woff2)
     format("woff2");
-  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC,
-    U+A830-A839, U+A8E0-A8FF;
+  unicode-range:
+    U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839,
+    U+A8E0-A8FF;
 }
 @font-face {
   font-family: "Poppins";
@@ -4040,8 +3979,9 @@ a:where(:not(.wp-element-button)) {
   font-display: fallback;
   src: url(https://websitedemos.net/fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecmNE.woff2)
     format("woff2");
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
-    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  unicode-range:
+    U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
   font-family: "Poppins";
@@ -4050,9 +3990,10 @@ a:where(:not(.wp-element-button)) {
   font-display: fallback;
   src: url(https://websitedemos.net/fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2)
     format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Poppins";
@@ -4061,8 +4002,9 @@ a:where(:not(.wp-element-button)) {
   font-display: fallback;
   src: url(https://websitedemos.net/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z11lFc-K.woff2)
     format("woff2");
-  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC,
-    U+A830-A839, U+A8E0-A8FF;
+  unicode-range:
+    U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839,
+    U+A8E0-A8FF;
 }
 @font-face {
   font-family: "Poppins";
@@ -4071,8 +4013,9 @@ a:where(:not(.wp-element-button)) {
   font-display: fallback;
   src: url(https://websitedemos.net/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1JlFc-K.woff2)
     format("woff2");
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
-    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  unicode-range:
+    U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
   font-family: "Poppins";
@@ -4081,9 +4024,10 @@ a:where(:not(.wp-element-button)) {
   font-display: fallback;
   src: url(https://websitedemos.net/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1xlFQ.woff2)
     format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Poppins";
@@ -4092,8 +4036,9 @@ a:where(:not(.wp-element-button)) {
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecmNE.woff2)
     format("woff2");
-  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC,
-    U+A830-A839, U+A8E0-A8FF;
+  unicode-range:
+    U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839,
+    U+A8E0-A8FF;
 }
 @font-face {
   font-family: "Poppins";
@@ -4102,8 +4047,9 @@ a:where(:not(.wp-element-button)) {
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecmNE.woff2)
     format("woff2");
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
-    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  unicode-range:
+    U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
   font-family: "Poppins";
@@ -4112,9 +4058,10 @@ a:where(:not(.wp-element-button)) {
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2)
     format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Poppins";
@@ -4123,8 +4070,9 @@ a:where(:not(.wp-element-button)) {
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2)
     format("woff2");
-  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC,
-    U+A830-A839, U+A8E0-A8FF;
+  unicode-range:
+    U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839,
+    U+A8E0-A8FF;
 }
 @font-face {
   font-family: "Poppins";
@@ -4133,8 +4081,9 @@ a:where(:not(.wp-element-button)) {
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2)
     format("woff2");
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
-    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  unicode-range:
+    U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
   font-family: "Poppins";
@@ -4143,9 +4092,10 @@ a:where(:not(.wp-element-button)) {
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2)
     format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Poppins";
@@ -4154,8 +4104,9 @@ a:where(:not(.wp-element-button)) {
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z11lFc-K.woff2)
     format("woff2");
-  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC,
-    U+A830-A839, U+A8E0-A8FF;
+  unicode-range:
+    U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839,
+    U+A8E0-A8FF;
 }
 @font-face {
   font-family: "Poppins";
@@ -4164,8 +4115,9 @@ a:where(:not(.wp-element-button)) {
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1JlFc-K.woff2)
     format("woff2");
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
-    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  unicode-range:
+    U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
   font-family: "Poppins";
@@ -4174,9 +4126,10 @@ a:where(:not(.wp-element-button)) {
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1xlFQ.woff2)
     format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Font Awesome 5 Free";
@@ -4184,7 +4137,8 @@ a:where(:not(.wp-element-button)) {
   font-weight: 400;
   font-display: block;
   src: url(https://websitedemos.net/wordpress-agency-04/wp-content/plugins/msicca/assets/lib/font-awesome/webfonts/fa-regular-400.eot);
-  src: url(https://websitedemos.net/wordpress-agency-04/wp-content/plugins/msicca/assets/lib/font-awesome/webfonts/fa-regular-400.eot?#iefix)
+  src:
+    url(https://websitedemos.net/wordpress-agency-04/wp-content/plugins/msicca/assets/lib/font-awesome/webfonts/fa-regular-400.eot?#iefix)
       format("embedded-opentype"),
     url(https://websitedemos.net/wordpress-agency-04/wp-content/plugins/msicca/assets/lib/font-awesome/webfonts/fa-regular-400.woff2)
       format("woff2"),
@@ -4201,7 +4155,8 @@ a:where(:not(.wp-element-button)) {
   font-weight: 900;
   font-display: block;
   src: url(https://websitedemos.net/wordpress-agency-04/wp-content/plugins/msicca/assets/lib/font-awesome/webfonts/fa-solid-900.eot);
-  src: url(https://websitedemos.net/wordpress-agency-04/wp-content/plugins/msicca/assets/lib/font-awesome/webfonts/fa-solid-900.eot?#iefix)
+  src:
+    url(https://websitedemos.net/wordpress-agency-04/wp-content/plugins/msicca/assets/lib/font-awesome/webfonts/fa-solid-900.eot?#iefix)
       format("embedded-opentype"),
     url(https://websitedemos.net/wordpress-agency-04/wp-content/plugins/msicca/assets/lib/font-awesome/webfonts/fa-solid-900.woff2)
       format("woff2"),
@@ -4218,7 +4173,8 @@ a:where(:not(.wp-element-button)) {
   font-weight: 900;
   font-display: block;
   src: url(https://websitedemos.net/wordpress-agency-04/wp-content/plugins/msicca/assets/lib/font-awesome/webfonts/fa-solid-900.eot);
-  src: url(https://websitedemos.net/wordpress-agency-04/wp-content/plugins/msicca/assets/lib/font-awesome/webfonts/fa-solid-900.eot?#iefix)
+  src:
+    url(https://websitedemos.net/wordpress-agency-04/wp-content/plugins/msicca/assets/lib/font-awesome/webfonts/fa-solid-900.eot?#iefix)
       format("embedded-opentype"),
     url(https://websitedemos.net/wordpress-agency-04/wp-content/plugins/msicca/assets/lib/font-awesome/webfonts/fa-solid-900.woff2)
       format("woff2"),
@@ -4235,7 +4191,8 @@ a:where(:not(.wp-element-button)) {
   font-weight: 400;
   font-display: block;
   src: url(https://websitedemos.net/wordpress-agency-04/wp-content/plugins/msicca/assets/lib/font-awesome/webfonts/fa-regular-400.eot);
-  src: url(https://websitedemos.net/wordpress-agency-04/wp-content/plugins/msicca/assets/lib/font-awesome/webfonts/fa-regular-400.eot?#iefix)
+  src:
+    url(https://websitedemos.net/wordpress-agency-04/wp-content/plugins/msicca/assets/lib/font-awesome/webfonts/fa-regular-400.eot?#iefix)
       format("embedded-opentype"),
     url(https://websitedemos.net/wordpress-agency-04/wp-content/plugins/msicca/assets/lib/font-awesome/webfonts/fa-regular-400.woff2)
       format("woff2"),
