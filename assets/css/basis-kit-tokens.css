@@ -16,6 +16,9 @@
 :root {
   /* ═══════════════════════════════════════════════════════════════════════
    * BRAND COLORS - MSICCA Dual Primary System
+   * NOTE: --brand and --brand-rgb are overridden in site.css to use the
+   * site's existing amber accent (#f59e0b) to maintain brand continuity.
+   * These defaults are the original BASIS KIT values.
    * ═══════════════════════════════════════════════════════════════════════ */
   --brand: #C93400;
   --brand-rgb: 201, 52, 0;
